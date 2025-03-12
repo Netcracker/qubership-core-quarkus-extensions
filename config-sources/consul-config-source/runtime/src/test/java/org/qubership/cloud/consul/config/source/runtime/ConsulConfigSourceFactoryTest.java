@@ -58,6 +58,7 @@ class ConsulConfigSourceFactoryTest {
         when(tokenStorage.get()).thenReturn("token");
         Response<List<GetValue>> listResponse = new Response<>(null, 1L, true, 1L);
         when(consulClient.getKVValues(eq(prefixes[0]), anyString())).thenReturn(listResponse);
+        when(consulClient.getKVValues(eq(prefixes[0]), anyString(), any())).thenReturn(listResponse);
 
         GetValue getValue = new GetValue();
         getValue.setKey(prefixes[1] + "/test-prop");
