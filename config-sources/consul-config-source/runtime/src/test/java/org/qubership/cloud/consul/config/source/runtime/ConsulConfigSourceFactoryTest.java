@@ -1,5 +1,7 @@
 package org.qubership.cloud.consul.config.source.runtime;
 
+import io.quarkus.test.junit.QuarkusTest;
+import org.mockito.AdditionalAnswers;
 import org.qubership.cloud.consul.provider.common.TokenStorage;
 import org.qubership.cloud.quarkus.consul.client.ConsulClient;
 import org.qubership.cloud.quarkus.consul.client.ConsulSourceConfig;
@@ -20,6 +22,7 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+@QuarkusTest
 class ConsulConfigSourceFactoryTest {
 
     private static final String[] prefixes = new String[]{"test/null", "test/application", "test/app-name"};
@@ -56,23 +59,23 @@ class ConsulConfigSourceFactoryTest {
         ConsulClient consulClient = mock(ConsulClient.class);
         TokenStorage tokenStorage = mock(TokenStorage.class);
         when(tokenStorage.get()).thenReturn("token");
-        Response<List<GetValue>> listResponse = new Response<>(null, 1L, true, 1L);
-        when(consulClient.getKVValues(eq(prefixes[0]), anyString())).thenReturn(listResponse);
-        when(consulClient.getKVValues(eq(prefixes[0]), anyString(), any())).thenReturn(listResponse);
+        Response<List<GetValue>> listResponse0 = new Response<>(null, 1L, true, 1L);
+        when(consulClient.getKVValues(eq(prefixes[0]), anyString())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse0));
+        when(consulClient.getKVValues(eq(prefixes[0]), anyString(), any())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse0));
 
         GetValue getValue = new GetValue();
         getValue.setKey(prefixes[1] + "/test-prop");
         getValue.setValue(Base64.getEncoder().encodeToString((prefixes[1] + "-value").getBytes()));
-        listResponse = new Response<>(Collections.singletonList(getValue), 1L, true, 1L);
-        when(consulClient.getKVValues(eq(prefixes[1]), anyString())).thenReturn(listResponse);
-        when(consulClient.getKVValues(eq(prefixes[1]), anyString(), any())).thenReturn(listResponse);
+        Response<List<GetValue>> listResponse1 = new Response<>(Collections.singletonList(getValue), 1L, true, 1L);
+        when(consulClient.getKVValues(eq(prefixes[1]), anyString())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse1));
+        when(consulClient.getKVValues(eq(prefixes[1]), anyString(), any())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse1));
 
         getValue = new GetValue();
         getValue.setKey(prefixes[2] + "/test-prop");
         getValue.setValue(Base64.getEncoder().encodeToString((prefixes[2] + "-value").getBytes()));
-        listResponse = new Response<>(Collections.singletonList(getValue), 1L, true, 1L);
-        when(consulClient.getKVValues(eq(prefixes[2]), anyString())).thenReturn(listResponse);
-        when(consulClient.getKVValues(eq(prefixes[2]), anyString(), any())).thenReturn(listResponse);
+        Response<List<GetValue>> listResponse2 = new Response<>(Collections.singletonList(getValue), 1L, true, 1L);
+        when(consulClient.getKVValues(eq(prefixes[2]), anyString())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse2));
+        when(consulClient.getKVValues(eq(prefixes[2]), anyString(), any())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse2));
 
         ConsulConfigSourceFactory factory = new ConsulConfigSourceFactory(consulClient, tokenStorage);
         Spliterator<ConfigSource> configSourcesSpliterator = factory.getConfigSources(null, consulDefaultSourceConfig).spliterator();
