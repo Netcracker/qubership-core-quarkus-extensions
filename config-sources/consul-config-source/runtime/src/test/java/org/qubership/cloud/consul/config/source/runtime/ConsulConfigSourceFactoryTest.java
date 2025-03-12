@@ -60,22 +60,22 @@ class ConsulConfigSourceFactoryTest {
         TokenStorage tokenStorage = mock(TokenStorage.class);
         when(tokenStorage.get()).thenReturn("token");
         Response<List<GetValue>> listResponse0 = new Response<>(null, 1L, true, 1L);
-        when(consulClient.getKVValues(eq(prefixes[0]), anyString())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse0));
-        when(consulClient.getKVValues(eq(prefixes[0]), anyString(), any())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse0));
+        when(consulClient.getKVValues(eq(prefixes[0]), anyString())).thenAnswer(AdditionalAnswers.answersWithDelay(1000, invocation -> listResponse0));
+        when(consulClient.getKVValues(eq(prefixes[0]), anyString(), any())).thenAnswer(AdditionalAnswers.answersWithDelay(1000, invocation -> listResponse0));
 
         GetValue getValue = new GetValue();
         getValue.setKey(prefixes[1] + "/test-prop");
         getValue.setValue(Base64.getEncoder().encodeToString((prefixes[1] + "-value").getBytes()));
         Response<List<GetValue>> listResponse1 = new Response<>(Collections.singletonList(getValue), 1L, true, 1L);
-        when(consulClient.getKVValues(eq(prefixes[1]), anyString())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse1));
-        when(consulClient.getKVValues(eq(prefixes[1]), anyString(), any())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse1));
+        when(consulClient.getKVValues(eq(prefixes[1]), anyString())).thenAnswer(AdditionalAnswers.answersWithDelay(1000, invocation -> listResponse1));
+        when(consulClient.getKVValues(eq(prefixes[1]), anyString(), any())).thenAnswer(AdditionalAnswers.answersWithDelay(1000, invocation -> listResponse1));
 
         getValue = new GetValue();
         getValue.setKey(prefixes[2] + "/test-prop");
         getValue.setValue(Base64.getEncoder().encodeToString((prefixes[2] + "-value").getBytes()));
         Response<List<GetValue>> listResponse2 = new Response<>(Collections.singletonList(getValue), 1L, true, 1L);
-        when(consulClient.getKVValues(eq(prefixes[2]), anyString())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse2));
-        when(consulClient.getKVValues(eq(prefixes[2]), anyString(), any())).thenAnswer(AdditionalAnswers.answersWithDelay(100, invocation -> listResponse2));
+        when(consulClient.getKVValues(eq(prefixes[2]), anyString())).thenAnswer(AdditionalAnswers.answersWithDelay(1000, invocation -> listResponse2));
+        when(consulClient.getKVValues(eq(prefixes[2]), anyString(), any())).thenAnswer(AdditionalAnswers.answersWithDelay(1000, invocation -> listResponse2));
 
         ConsulConfigSourceFactory factory = new ConsulConfigSourceFactory(consulClient, tokenStorage);
         Spliterator<ConfigSource> configSourcesSpliterator = factory.getConfigSources(null, consulDefaultSourceConfig).spliterator();
