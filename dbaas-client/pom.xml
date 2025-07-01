@@ -3,7 +3,7 @@
     <parent>
         <artifactId>cloud-core-quarkus</artifactId>
         <groupId>org.qubership.cloud.quarkus</groupId>
-        <version>7.0.0-SNAPSHOT</version>
+        <version>7.0.3-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -14,10 +14,6 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-
-        <sonar.coverage.jacoco.xmlReportPaths>
-            ${project.basedir}/../../../report-aggregate/target/site/jacoco-aggregate/jacoco.xml
-        </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <modules>

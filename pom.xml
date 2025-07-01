@@ -2,9 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.qubership.cloud.quarkus</groupId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>7.0.3-SNAPSHOT</version>
     <artifactId>cloud-core-quarkus</artifactId>
     <packaging>pom</packaging>
+
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <properties>
         <lombok.version>1.18.36</lombok.version>
@@ -40,11 +48,19 @@
         </dependencies>
     </dependencyManagement>
 
+    <scm>
+        <connection>scm:git:https://github.com/Netcracker/qubership-core-quarkus-extensions.git</connection>
+        <developerConnection>scm:git:https://github.com/Netcracker/qubership-core-quarkus-extensions.git
+        </developerConnection>
+        <url>https://github.com/Netcracker/qubership-core-quarkus-extensions</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <repositories>
         <repository>
             <id>github</id>
             <url>https://maven.pkg.github.com/netcracker/*</url>
-            <snapshots/>
+            <snapshots />
         </repository>
     </repositories>
 
