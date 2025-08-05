@@ -4,7 +4,7 @@
   <parent>
     <artifactId>log-manager-parent</artifactId>
     <groupId>org.qubership.cloud.quarkus</groupId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>7.1.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -45,7 +45,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-stomp</artifactId>
-      <version>4.5.11</version>
+      <version>4.5.14</version>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>

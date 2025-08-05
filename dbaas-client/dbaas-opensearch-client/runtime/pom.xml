@@ -4,13 +4,13 @@
     <parent>
         <groupId>org.qubership.cloud.quarkus</groupId>
         <artifactId>dbaas-opensearch-parent</artifactId>
-        <version>7.0.0-SNAPSHOT</version>
+        <version>7.1.1-SNAPSHOT</version>
     </parent>
     <artifactId>dbaas-opensearch-client</artifactId>
 
     <properties>
-        <testcontainers.version>1.20.4</testcontainers.version>
-        <junit.version>5.11.3</junit.version>
+        <testcontainers.version>1.20.6</testcontainers.version>
+        <junit.version>5.11.4</junit.version>
         <sonar.exclusions>**/OpensearchDbaaSApiClientImpl.java</sonar.exclusions>
     </properties>
 

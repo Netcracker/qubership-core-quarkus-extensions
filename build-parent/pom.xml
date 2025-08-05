@@ -5,7 +5,7 @@
     <parent>
         <artifactId>cloud-core-quarkus</artifactId>
         <groupId>org.qubership.cloud.quarkus</groupId>
-        <version>7.0.0-SNAPSHOT</version>
+        <version>7.1.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>build-parent</artifactId>
@@ -35,9 +35,8 @@
         <maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
         <jacoco.plugin.version>0.8.7</jacoco.plugin.version>
         <jandex-maven-plugin.version>3.1.7</jandex-maven-plugin.version>
-        <rest-libraries.version>6.0.0-SNAPSHOT</rest-libraries.version>
-        <kafka-context-propagation.version>11.0.0-SNAPSHOT</kafka-context-propagation.version>
-        <maas-client.version>11.0.0-SNAPSHOT</maas-client.version>
+        <rest-libraries.version>6.1.0</rest-libraries.version>
+        <maas-client.version>11.1.0</maas-client.version>
     </properties>
 
     <profiles>
@@ -256,11 +255,6 @@
                     </executions>
                 </plugin>
                 <plugin>
-                    <groupId>com.google.code.maven-replacer-plugin</groupId>
-                    <artifactId>maven-resources-plugin</artifactId>
-                    <version>1.5.3</version>
-                </plugin>
-                <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>3.3.1</version>
                 </plugin>
@@ -279,14 +273,9 @@
                     <execution>
                         <goals>
                             <goal>prepare-agent</goal>
-                            <goal>report</goal>
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <dataFile>target/jacoco.exec</dataFile>
-                    <outputDirectory>target/jacoco-ut</outputDirectory>
-                </configuration>
             </plugin>
             <!-- deploy sources -->
             <plugin>

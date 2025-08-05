@@ -100,8 +100,7 @@ By default, the property has a `tenant` value.
 
 After it, you should make default steps: create an entity, create repository interface that is
 extended `PanacheRepositoryBase`
-and inject your repository to your classes. You can see an example in our quarkus
-quickstarter: https://git.qubership.org/DEMO.Platform_Researches/quarkus-quickstart.    
+and inject your repository to your classes.
 Sometimes, you also need to use the other kind of database, for example, your use two types of logical database in your
 microservice at the same time. In this case, you should inject a named bean and use it for database operations. In other
 words, you can define `quarkus.dbaas.datasource.main-type=service` and use Panache with serviceDb and
@@ -467,22 +466,23 @@ For configuring extension you should use [common properties](#common-properties)
 Some of these params allows to configure logical db with different types. It is possible to set settings for:
 
 * service database, e.g. `quarkus.dbaas.cassandra.api.service.physical-database-id`
-* all tenant databases, e.g. `quarkus.dbaas.cassandra.api.tenant.physical-database-id`
+* all tenant databases, e.g. `quarkus.dbaas.cassandra.api.tenant.tenant.physical-database-id`
 * specific tenant database with id,
-  e.g. `quarkus.dbaas.cassandra.api.<tenant-id>.physical-database-id`
+  e.g. `quarkus.dbaas.cassandra.api.tenant.<tenant-id>.physical-database-id`
 
-| Property                                                                          | Description                                                                                                                                    | Default value     | Status                                          |
-|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------|
-| quarkus.dbaas.cassandra.api.db-classifier                                         | Configures field "dbClassifier" in CassandraClassifier                                                                                         | default           | since 3.0.0. Property name was changed in 3.0.0 |
-| quarkus.dbaas.cassandra.api.[service\|tenant\|\<tenant-id\>].physical-database-id | Specify physicalDb in which logical db will be created                                                                                         | `none. Optional`  | since 3.0.0. Property name was changed in 3.0.0 |
-| quarkus.dbaas.cassandra.requestTimeoutMs                                          | Set up the timeout for requests within session with cassandra                                                                                  | default           | since 2.8.1                                     |
-| quarkus.dbaas.cassandra.ssl                                                       | Enable SSL (TLS)                                                                                                                               | default           | since 2.8.1                                     |
-| quarkus.dbaas.cassandra.truststorePath                                            | Trust store path with certificates for access to the resource worked over TLS                                                                  | default           | since 2.8.1                                     |
-| quarkus.dbaas.cassandra.truststorePassword                                        | Password for the trust store path                                                                                                              | default           | since 2.8.1                                     |
-| quarkus.dbaas.cassandra.api.db-prefix                                             | Allows configure database name prefix for both service and tenant database creation                                                            | `none. Optional`  | since 3.3.0                                     |
-| quarkus.dbaas.cassandra.api.runtime-user-role                                     | Allows configure connection user role for both service and tenant database                                                                     | `admin. Optional` | since 4.2.0                                     |
-| quarkus.dbaas.cassandra.ssl-hostname-validation                                   | Whether to require validation that the hostname of the server certificate's common name matches the hostname of the server being connected to. | true              | since 4.4.4                                     |
-| quarkus.dbaas.cassandra.lb-slow-replica-avoidance                                 | Whether the slow replica avoidance should be enabled in the default LBP.                                                                       | true              | since 4.4.4                                     |
+| Property                                                                                   | Description                                                                                                                                    | Default value     | Status                                          |
+|--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------|
+| quarkus.dbaas.cassandra.api.db-classifier                                                  | Configures field "dbClassifier" in CassandraClassifier                                                                                         | default           | since 3.0.0. Property name was changed in 3.0.0 |
+| quarkus.dbaas.cassandra.api.[service\|tenant\|\<tenant-id\>].physical-database-id          | Specify physicalDb in which logical db will be created                                                                                         | `none. Optional`  | since 3.0.0. Property name was changed in 3.0.0 |
+| quarkus.dbaas.cassandra.api.[service\|tenant\|\<tenant-id\>].database-settings.replication | Specify replication setting for created logical db                                                                                             | `none. Optional`  | since 6.10.3                                    |
+| quarkus.dbaas.cassandra.requestTimeoutMs                                                   | Set up the timeout for requests within session with cassandra                                                                                  | default           | since 2.8.1                                     |
+| quarkus.dbaas.cassandra.ssl                                                                | Enable SSL (TLS)                                                                                                                               | default           | since 2.8.1                                     |
+| quarkus.dbaas.cassandra.truststorePath                                                     | Trust store path with certificates for access to the resource worked over TLS                                                                  | default           | since 2.8.1                                     |
+| quarkus.dbaas.cassandra.truststorePassword                                                 | Password for the trust store path                                                                                                              | default           | since 2.8.1                                     |
+| quarkus.dbaas.cassandra.api.db-prefix                                                      | Allows configure database name prefix for both service and tenant database creation                                                            | `none. Optional`  | since 3.3.0                                     |
+| quarkus.dbaas.cassandra.api.runtime-user-role                                              | Allows configure connection user role for both service and tenant database                                                                     | `admin. Optional` | since 4.2.0                                     |
+| quarkus.dbaas.cassandra.ssl-hostname-validation                                            | Whether to require validation that the hostname of the server certificate's common name matches the hostname of the server being connected to. | true              | since 4.4.4                                     |
+| quarkus.dbaas.cassandra.lb-slow-replica-avoidance                                          | Whether the slow replica avoidance should be enabled in the default LBP.                                                                       | true              | since 4.4.4                                     |
 
 ### Cassandra Metrics
 
@@ -744,7 +744,7 @@ attention**
 to provide some dbaas functionality such as password validation, reconnection, multi-tenancy and so on.
 
 More info can be
-found [here](https://git.qubership.org/PROD.Platform.Cloud_Core/dbaas-client/-/tree/main/dbaas-client-java/dbaas-client-opensearch-base#native-resthighlevelclient)
+found [here](https://github.com/Netcracker/qubership-dbaas-client/tree/main/dbaas-client-java/dbaas-client-opensearch-base#native-opensearchclient)
 
 ##### ServiceNative client
 
@@ -792,7 +792,7 @@ public void hello(){
 ```
 
 DbaaS solution Information about supported methods and restrictions can be found
-in https://git.qubership.org/PROD.Platform.Cloud_Core/dbaas-client/-/tree/main/dbaas-client-java/dbaas-client-opensearch-base
+in https://github.com/Netcracker/qubership-dbaas-client/tree/main/dbaas-client-java/dbaas-client-opensearch-base
 .
 
 Service and tenant clients allow users to use API
@@ -922,11 +922,6 @@ To start using TLS feature user has to enable it on the physical database (adapt
 ### Physical database switching
 
 > These parameters are given as an example. For reliable information, check each adapter's documentation
-> * Postgresql: https://git.qubership.org/PROD.Platform.HA/postgres-operator/-/blob/main/docs/installation.md#tls
-> * Cassandra: https://git.qubership.org/PROD.Platform.Databases/cassandra-operator/-/blob/main/docs/installation_guide.md#tls-encryption
-> * Mongodb: https://git.qubership.org/PROD.Platform.Databases/mongodb-operator/-/blob/main/docs/installation_guide.md#tls-parameters
-> * Opensearch: https://git.qubership.org/PROD.Platform.ElasticStack/opensearch-service/-/blob/main/documentation/installation-guide/encrypted-access/README.md
-
 
 To enable TLS support in physical database redeploy database with parameters from column `Enable TLS`. 
 In order to use TLS with cert-manager also add parameters from second column.
