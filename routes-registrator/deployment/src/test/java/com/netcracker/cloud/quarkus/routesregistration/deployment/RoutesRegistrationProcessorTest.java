@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.routesregistration.deployment;
+package com.netcracker.cloud.quarkus.routesregistration.deployment;
 
 import org.qubership.cloud.quarkus.routesregistration.deployment.config.RequestRecorder;
 import org.qubership.cloud.quarkus.routesregistration.deployment.config.TestConfig;

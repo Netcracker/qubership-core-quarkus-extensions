@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.stomp.ws.runtime;
+package com.netcracker.cloud.quarkus.stomp.ws.runtime;
 
 import org.qubership.cloud.quarkus.stomp.ws.runtime.handlers.SubscribeHandler;
 import org.qubership.cloud.quarkus.stomp.ws.runtime.interceptors.SubscribeInterceptor;

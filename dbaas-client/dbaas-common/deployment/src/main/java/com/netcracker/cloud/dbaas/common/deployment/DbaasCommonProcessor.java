@@ -1,4 +1,4 @@
-package org.qubership.cloud.dbaas.common.deployment;
+package com.netcracker.cloud.dbaas.common.deployment;
 
 import org.qubership.cloud.dbaas.common.config.DbaaSClassifierProducer;
 import org.qubership.cloud.dbaas.common.config.DbaaSMetricsRegistrarProducer;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.it;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.it;
 
 import org.qubership.cloud.framework.contexts.tenant.context.TenantContext;
 import org.qubership.cloud.dbaas.client.cassandra.entity.DbaasCassandraProperties;

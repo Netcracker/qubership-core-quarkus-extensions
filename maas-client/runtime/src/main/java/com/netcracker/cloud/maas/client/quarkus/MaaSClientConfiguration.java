@@ -1,4 +1,4 @@
-package org.qubership.cloud.maas.client.quarkus;
+package com.netcracker.cloud.maas.client.quarkus;
 
 import org.qubership.cloud.quarkus.security.auth.M2MManager;
 import org.qubership.cloud.maas.client.api.MaaSAPIClient;

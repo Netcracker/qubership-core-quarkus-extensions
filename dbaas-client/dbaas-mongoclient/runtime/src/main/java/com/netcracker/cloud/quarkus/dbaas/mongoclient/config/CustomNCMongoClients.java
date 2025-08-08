@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.mongoclient.config;
+package com.netcracker.cloud.quarkus.dbaas.mongoclient.config;
 
 import com.mongodb.MongoException;
 import com.mongodb.client.MongoClient;

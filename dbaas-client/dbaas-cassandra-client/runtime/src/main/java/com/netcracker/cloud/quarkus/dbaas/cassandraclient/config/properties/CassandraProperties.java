@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties;
 
 import io.quarkus.runtime.annotations.ConfigItem;
 import io.quarkus.runtime.annotations.ConfigPhase;

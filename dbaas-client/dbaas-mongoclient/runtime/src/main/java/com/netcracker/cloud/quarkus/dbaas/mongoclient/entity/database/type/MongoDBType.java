@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.mongoclient.entity.database.type;
+package com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.database.type;
 
 import org.qubership.cloud.dbaas.client.entity.database.type.DatabaseType;
 import org.qubership.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.consul.client.http;
+package com.netcracker.cloud.quarkus.consul.client.http;
 
 import org.qubership.cloud.quarkus.consul.client.model.GetValue;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.disableapi.quarkus;
+package com.netcracker.cloud.disableapi.quarkus;
 
 import io.restassured.http.Method;
 import org.hamcrest.Matcher;

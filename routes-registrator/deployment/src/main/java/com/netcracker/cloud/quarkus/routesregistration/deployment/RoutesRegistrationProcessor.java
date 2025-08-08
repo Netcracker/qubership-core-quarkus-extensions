@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.routesregistration.deployment;
+package com.netcracker.cloud.quarkus.routesregistration.deployment;
 
 import org.qubership.cloud.quarkus.routesregistration.runtime.RoutesRegistrationRecorder;
 import org.qubership.cloud.routesregistration.common.annotation.*;

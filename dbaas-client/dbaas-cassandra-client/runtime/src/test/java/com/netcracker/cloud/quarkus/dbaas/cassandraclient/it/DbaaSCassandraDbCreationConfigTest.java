@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.it;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.it;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

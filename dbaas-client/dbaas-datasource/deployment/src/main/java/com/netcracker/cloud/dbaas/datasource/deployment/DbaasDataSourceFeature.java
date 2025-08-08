@@ -1,4 +1,4 @@
-package org.qubership.cloud.dbaas.datasource.deployment;
+package com.netcracker.cloud.dbaas.datasource.deployment;
 
 import org.qubership.cloud.core.quarkus.dbaas.datasource.DataSourceAggregator;
 import org.qubership.cloud.core.quarkus.dbaas.datasource.config.CoreQuarkusDataSourceProducer;

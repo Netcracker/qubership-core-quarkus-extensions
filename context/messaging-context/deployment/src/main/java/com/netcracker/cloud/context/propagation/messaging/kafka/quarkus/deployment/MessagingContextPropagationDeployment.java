@@ -1,4 +1,4 @@
-package org.qubership.cloud.context.propagation.messaging.kafka.quarkus.deployment;
+package com.netcracker.cloud.context.propagation.messaging.kafka.quarkus.deployment;
 
 import org.qubership.cloud.context.propagaton.messaging.kafka.quarkus.ContextAwareEmitterProducer;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;

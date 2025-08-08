@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.consul.client;
+package com.netcracker.cloud.quarkus.consul.client;
 
 import org.qubership.cloud.consul.provider.common.TokenStorage;
 

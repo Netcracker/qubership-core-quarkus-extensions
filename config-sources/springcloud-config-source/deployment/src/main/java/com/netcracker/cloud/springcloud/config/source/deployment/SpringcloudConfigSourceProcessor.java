@@ -1,4 +1,4 @@
-package org.qubership.cloud.springcloud.config.source.deployment;
+package com.netcracker.cloud.springcloud.config.source.deployment;
 
 import org.qubership.cloud.springcloud.config.source.PropertyManager;
 import org.qubership.cloud.springcloud.config.source.SpringCloudConfigSourceBuilder;

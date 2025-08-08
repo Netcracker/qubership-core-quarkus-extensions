@@ -1,4 +1,4 @@
-package org.qubership.cloud.dbaas.common.config;
+package com.netcracker.cloud.dbaas.common.config;
 import okhttp3.Interceptor;
 import okhttp3.Response;
 import org.jboss.logging.Logger;

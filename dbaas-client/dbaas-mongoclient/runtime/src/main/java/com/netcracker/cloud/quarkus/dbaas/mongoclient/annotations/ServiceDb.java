@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.mongoclient.annotations;
+package com.netcracker.cloud.quarkus.dbaas.mongoclient.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

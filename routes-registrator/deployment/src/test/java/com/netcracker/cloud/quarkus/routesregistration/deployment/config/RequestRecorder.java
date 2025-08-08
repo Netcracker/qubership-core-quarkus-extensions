@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.routesregistration.deployment.config;
+package com.netcracker.cloud.quarkus.routesregistration.deployment.config;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import okhttp3.Request;

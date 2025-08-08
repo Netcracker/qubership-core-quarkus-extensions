@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers;
 
 import org.qubership.cloud.core.quarkus.dbaas.datasource.config.flyway.CoreFlywayConfig;
 import org.qubership.cloud.core.quarkus.dbaas.datasource.config.flyway.FlywayConfig;

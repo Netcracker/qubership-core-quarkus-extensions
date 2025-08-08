@@ -1,4 +1,4 @@
-package org.qubership.cloud.consul.config.source.runtime;
+package com.netcracker.cloud.consul.config.source.runtime;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;

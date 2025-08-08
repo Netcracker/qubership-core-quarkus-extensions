@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration;
 
 import io.quarkus.test.common.QuarkusTestResourceLifecycleManager;
 

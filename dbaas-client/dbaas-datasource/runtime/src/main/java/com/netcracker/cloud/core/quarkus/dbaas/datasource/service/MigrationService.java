@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.service;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.service;
 
 import javax.sql.DataSource;
 

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.security.auth;
+package com.netcracker.cloud.quarkus.security.auth;
 
 import lombok.extern.slf4j.Slf4j;
 import org.qubership.cloud.security.core.auth.DummyM2MManager;

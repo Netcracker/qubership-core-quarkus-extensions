@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.service.agroal.auth;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.service.agroal.auth;
 
 import io.agroal.api.security.AgroalDefaultSecurityProvider;
 import io.agroal.api.security.SimplePassword;

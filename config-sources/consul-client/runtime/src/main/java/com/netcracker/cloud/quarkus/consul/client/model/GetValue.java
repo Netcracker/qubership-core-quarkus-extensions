@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.consul.client.model;
+package com.netcracker.cloud.quarkus.consul.client.model;
 
 import com.google.gson.annotations.SerializedName;
 

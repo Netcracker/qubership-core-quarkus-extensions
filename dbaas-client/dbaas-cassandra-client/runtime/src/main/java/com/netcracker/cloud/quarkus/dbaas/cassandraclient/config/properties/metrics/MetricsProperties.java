@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.metrics;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.metrics;
 
 import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.opensearch.client;
+package com.netcracker.cloud.quarkus.dbaas.opensearch.client;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;

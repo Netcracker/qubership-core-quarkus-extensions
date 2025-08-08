@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.routesregistration.deployment.resource;
+package com.netcracker.cloud.quarkus.routesregistration.deployment.resource;
 
 import org.qubership.cloud.routesregistration.common.annotation.FacadeGateway;
 import org.qubership.cloud.routesregistration.common.annotation.FacadeRoute;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.mongoclient;
+package com.netcracker.cloud.quarkus.dbaas.mongoclient;
 
 import com.mongodb.ClientSessionOptions;
 import com.mongodb.client.ChangeStreamIterable;

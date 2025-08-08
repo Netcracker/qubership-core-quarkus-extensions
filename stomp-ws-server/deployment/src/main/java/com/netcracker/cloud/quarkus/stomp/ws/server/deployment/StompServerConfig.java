@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.stomp.ws.server.deployment;
+package com.netcracker.cloud.quarkus.stomp.ws.server.deployment;
 
 import io.quarkus.runtime.annotations.ConfigItem;
 import io.quarkus.runtime.annotations.ConfigRoot;

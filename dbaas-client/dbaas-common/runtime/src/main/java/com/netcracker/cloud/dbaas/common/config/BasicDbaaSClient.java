@@ -1,4 +1,4 @@
-package org.qubership.cloud.dbaas.common.config;
+package com.netcracker.cloud.dbaas.common.config;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import lombok.extern.slf4j.Slf4j;

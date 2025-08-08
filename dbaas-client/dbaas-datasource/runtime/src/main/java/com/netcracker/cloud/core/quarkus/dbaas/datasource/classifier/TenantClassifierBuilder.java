@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.classifier;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.classifier;
 
 import lombok.extern.slf4j.Slf4j;
 import org.qubership.cloud.context.propagation.core.ContextManager;

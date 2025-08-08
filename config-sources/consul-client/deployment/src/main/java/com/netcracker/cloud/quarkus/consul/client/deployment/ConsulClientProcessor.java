@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.consul.client.deployment;
+package com.netcracker.cloud.quarkus.consul.client.deployment;
 
 
 import org.qubership.cloud.quarkus.consul.client.ConsulClientConfiguration;

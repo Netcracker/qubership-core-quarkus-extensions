@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.routesregistration.deployment.config;
+package com.netcracker.cloud.quarkus.routesregistration.deployment.config;
 
 import org.qubership.cloud.quarkus.routesregistration.runtime.gateway.route.QuarkusControlPlaneClient;
 import org.qubership.cloud.routesregistration.common.gateway.route.*;

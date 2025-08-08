@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.mongoclient.service.impl;
+package com.netcracker.cloud.quarkus.dbaas.mongoclient.service.impl;
 
 import lombok.extern.slf4j.Slf4j;
 import org.testcontainers.containers.GenericContainer;

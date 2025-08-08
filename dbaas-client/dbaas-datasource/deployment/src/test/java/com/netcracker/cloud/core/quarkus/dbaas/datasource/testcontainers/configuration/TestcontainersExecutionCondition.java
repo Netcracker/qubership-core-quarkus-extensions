@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration;
 
 import org.junit.jupiter.api.extension.ConditionEvaluationResult;
 import org.junit.jupiter.api.extension.ExecutionCondition;

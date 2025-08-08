@@ -1,4 +1,4 @@
-package org.qubership.cloud.springcloud.config.source.configuration;
+package com.netcracker.cloud.springcloud.config.source.configuration;
 
 import java.lang.annotation.*;
 

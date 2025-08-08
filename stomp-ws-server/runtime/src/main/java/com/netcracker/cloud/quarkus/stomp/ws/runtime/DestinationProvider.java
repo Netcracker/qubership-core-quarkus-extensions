@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.stomp.ws.runtime;
+package com.netcracker.cloud.quarkus.stomp.ws.runtime;
 
 import io.quarkus.runtime.StartupEvent;
 import io.vertx.ext.stomp.Destination;

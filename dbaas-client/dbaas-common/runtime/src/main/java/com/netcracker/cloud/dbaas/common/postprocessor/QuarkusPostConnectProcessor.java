@@ -1,4 +1,4 @@
-package org.qubership.cloud.dbaas.common.postprocessor;
+package com.netcracker.cloud.dbaas.common.postprocessor;
 
 import org.qubership.cloud.dbaas.client.entity.database.AbstractDatabase;
 import org.qubership.cloud.dbaas.client.management.PostConnectProcessor;

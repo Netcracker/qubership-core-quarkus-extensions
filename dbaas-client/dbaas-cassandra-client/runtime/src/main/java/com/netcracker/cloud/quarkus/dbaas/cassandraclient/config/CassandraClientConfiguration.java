@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.config;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.config;
 
 import com.datastax.oss.driver.api.core.CqlSession;
 import org.qubership.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;

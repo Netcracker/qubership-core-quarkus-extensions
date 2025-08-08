@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.metrics;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.metrics;
 
 import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
 import org.qubership.cloud.dbaas.client.entity.database.type.PostgresDBType;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.mongoclient.deployment;
+package com.netcracker.cloud.quarkus.dbaas.mongoclient.deployment;
 
 import org.qubership.cloud.quarkus.dbaas.mongoclient.AnnotationParsingBean;
 import org.qubership.cloud.quarkus.dbaas.mongoclient.MongoClientAggregator;

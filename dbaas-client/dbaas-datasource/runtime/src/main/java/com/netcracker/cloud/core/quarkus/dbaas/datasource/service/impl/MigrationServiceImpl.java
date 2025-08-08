@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.service.impl;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.service.impl;
 
 import org.qubership.cloud.core.quarkus.dbaas.datasource.config.flyway.CoreFlywayCreator;
 import org.qubership.cloud.core.quarkus.dbaas.datasource.service.MigrationService;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.classifier;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.classifier;
 
 import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
 import org.junit.jupiter.api.Test;

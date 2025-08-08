@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.opensearch.client;
+package com.netcracker.cloud.quarkus.dbaas.opensearch.client;
 
 import org.qubership.cloud.dbaas.client.DbaasClient;
 import org.qubership.cloud.dbaas.client.metrics.DbaaSMetricsRegistrar;

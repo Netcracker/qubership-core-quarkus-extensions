@@ -1,4 +1,4 @@
-package org.qubership.cloud.disableapi.quarkus.annotations;
+package com.netcracker.cloud.disableapi.quarkus.annotations;
 
 import org.qubership.cloud.disableapi.quarkus.annotations.profiles.AnnotationsProfile;
 import io.quarkus.test.junit.QuarkusTest;
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 @QuarkusTest
 @TestProfile(AnnotationsProfile.class)
 class TestViaAnnotation extends AbstractAnnotationsTest {
-    
+
     @Test
     void v1Test() {
         test("/api/v1/test", Method.GET, 404, CoreMatchers.containsString(MANDATORY_RESPONSE_STRING));

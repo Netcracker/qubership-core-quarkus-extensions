@@ -1,4 +1,4 @@
-package org.qubership.cloud.dbaas.common.classifier;
+package com.netcracker.cloud.dbaas.common.classifier;
 
 import org.qubership.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
 

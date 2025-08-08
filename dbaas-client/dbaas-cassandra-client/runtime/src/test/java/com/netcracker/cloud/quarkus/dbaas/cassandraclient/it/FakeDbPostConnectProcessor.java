@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.it;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.it;
 
 import org.qubership.cloud.dbaas.common.postprocessor.QuarkusPostConnectProcessor;
 import org.qubership.cloud.quarkus.dbaas.cassandraclient.it.entity.FakeDatabase;

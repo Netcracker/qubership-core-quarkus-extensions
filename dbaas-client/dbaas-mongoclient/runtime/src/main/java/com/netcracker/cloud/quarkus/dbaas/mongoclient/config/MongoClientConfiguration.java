@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.mongoclient.config;
+package com.netcracker.cloud.quarkus.dbaas.mongoclient.config;
 
 import org.qubership.cloud.quarkus.dbaas.mongoclient.DbaaSMongoClient;
 import org.qubership.cloud.quarkus.dbaas.mongoclient.classifier.ServiceClassifierBuilder;

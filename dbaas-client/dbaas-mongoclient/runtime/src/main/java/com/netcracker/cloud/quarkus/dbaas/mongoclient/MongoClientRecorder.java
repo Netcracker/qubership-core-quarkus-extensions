@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.mongoclient;
+package com.netcracker.cloud.quarkus.dbaas.mongoclient;
 
 import io.quarkus.runtime.annotations.Recorder;
 import lombok.extern.slf4j.Slf4j;

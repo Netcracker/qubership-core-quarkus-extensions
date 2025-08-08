@@ -1,4 +1,4 @@
-package org.qubership.cloud.consul.config.source;
+package com.netcracker.cloud.consul.config.source;
 
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;

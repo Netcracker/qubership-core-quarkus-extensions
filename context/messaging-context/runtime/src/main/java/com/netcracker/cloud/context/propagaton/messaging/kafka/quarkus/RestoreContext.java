@@ -1,4 +1,4 @@
-package org.qubership.cloud.context.propagaton.messaging.kafka.quarkus;
+package com.netcracker.cloud.context.propagaton.messaging.kafka.quarkus;
 
 import jakarta.interceptor.InterceptorBinding;
 

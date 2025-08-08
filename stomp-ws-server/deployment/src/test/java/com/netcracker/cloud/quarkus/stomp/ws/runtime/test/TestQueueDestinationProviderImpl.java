@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.stomp.ws.runtime.test;
+package com.netcracker.cloud.quarkus.stomp.ws.runtime.test;
 
 import org.qubership.cloud.quarkus.stomp.ws.runtime.DestinationProvider;
 import io.vertx.ext.stomp.Destination;

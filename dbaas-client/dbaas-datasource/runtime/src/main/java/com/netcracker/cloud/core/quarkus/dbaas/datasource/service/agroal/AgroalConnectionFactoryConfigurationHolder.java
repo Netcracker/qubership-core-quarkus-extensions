@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.service.agroal;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.service.agroal;
 
 import io.agroal.api.configuration.AgroalConnectionFactoryConfiguration;
 import io.agroal.api.security.AgroalSecurityProvider;

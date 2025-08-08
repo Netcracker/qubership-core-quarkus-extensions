@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.logging.manager.runtime;
+package com.netcracker.cloud.quarkus.logging.manager.runtime;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

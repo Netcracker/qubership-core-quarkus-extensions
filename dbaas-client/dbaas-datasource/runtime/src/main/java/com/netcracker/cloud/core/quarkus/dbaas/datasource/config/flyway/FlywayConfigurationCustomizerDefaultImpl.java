@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.config.flyway;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.config.flyway;
 
 import io.quarkus.runtime.util.StringUtil;
 import jakarta.annotation.Priority;

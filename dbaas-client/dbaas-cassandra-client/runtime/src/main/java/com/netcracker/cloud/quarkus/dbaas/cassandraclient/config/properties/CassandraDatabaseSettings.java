@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.quarkus.runtime.annotations.ConfigGroup;

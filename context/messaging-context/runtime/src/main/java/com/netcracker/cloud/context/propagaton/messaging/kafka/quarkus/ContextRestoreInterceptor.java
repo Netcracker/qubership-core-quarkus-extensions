@@ -1,4 +1,4 @@
-package org.qubership.cloud.context.propagaton.messaging.kafka.quarkus;
+package com.netcracker.cloud.context.propagaton.messaging.kafka.quarkus;
 
 import org.qubership.cloud.maas.client.context.kafka.KafkaContextPropagation;
 import io.smallrye.reactive.messaging.kafka.api.KafkaMessageMetadata;

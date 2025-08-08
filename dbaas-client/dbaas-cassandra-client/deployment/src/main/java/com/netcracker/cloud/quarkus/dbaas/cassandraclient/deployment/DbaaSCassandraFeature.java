@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.deployment;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.deployment;
 
 import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.CassandraClientConfiguration;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.consul.client.http;
+package com.netcracker.cloud.quarkus.consul.client.http;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.logging.manager.runtime.consul;
+package com.netcracker.cloud.quarkus.logging.manager.runtime.consul;
 
 import io.smallrye.config.ConfigMapping;
 import io.smallrye.config.WithDefault;

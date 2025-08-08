@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.routesregistration.deployment;
+package com.netcracker.cloud.quarkus.routesregistration.deployment;
 
 import org.qubership.cloud.routesregistration.common.gateway.route.RouteEntry;
 import io.quarkus.builder.item.SimpleBuildItem;

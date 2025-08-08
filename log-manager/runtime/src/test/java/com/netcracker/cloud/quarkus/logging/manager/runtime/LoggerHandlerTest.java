@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.logging.manager.runtime;
+package com.netcracker.cloud.quarkus.logging.manager.runtime;
 
 import io.vertx.core.MultiMap;
 import io.vertx.core.http.HttpMethod;

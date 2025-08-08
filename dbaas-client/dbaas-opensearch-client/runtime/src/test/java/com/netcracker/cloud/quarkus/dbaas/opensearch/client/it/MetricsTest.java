@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.opensearch.client.it;
+package com.netcracker.cloud.quarkus.dbaas.opensearch.client.it;
 
 import org.qubership.cloud.dbaas.client.metrics.DatabaseMetricProperties;
 import org.qubership.cloud.dbaas.client.metrics.MetricsProvider;
@@ -84,7 +84,7 @@ class MetricsTest {
             log.info("Index {} already hasn't exist", ContainerLogicalDbProvider.TEST_INDEX);
         }
     }
-    
+
     @Test
     void checkOpensearchMetricsProviderExistsInCdi() {
         Assertions.assertFalse(meterRegistry.isUnsatisfied());

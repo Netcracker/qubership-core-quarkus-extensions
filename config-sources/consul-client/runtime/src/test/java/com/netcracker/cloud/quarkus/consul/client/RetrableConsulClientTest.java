@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.consul.client;
+package com.netcracker.cloud.quarkus.consul.client;
 
 import com.ecwid.consul.transport.TransportException;
 import org.qubership.cloud.quarkus.consul.client.model.GetValue;

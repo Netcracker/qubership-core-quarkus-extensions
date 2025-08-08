@@ -1,4 +1,4 @@
-package org.qubership.cloud.disableapi.quarkus.annotations;
+package com.netcracker.cloud.disableapi.quarkus.annotations;
 
 import org.qubership.cloud.disableapi.quarkus.annotations.profiles.DisabledProfile;
 import io.quarkus.test.junit.QuarkusTest;
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 @QuarkusTest
 @TestProfile(DisabledProfile.class)
 class TestDisabled extends AbstractAnnotationsTest {
-    
+
     @Test
     void v1Test() {
         test("/api/v1/test", Method.GET, 200, CoreMatchers.containsString("ok"));

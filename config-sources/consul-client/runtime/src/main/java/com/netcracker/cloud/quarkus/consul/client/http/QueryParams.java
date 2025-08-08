@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.consul.client.http;
+package com.netcracker.cloud.quarkus.consul.client.http;
 
 import java.util.ArrayList;
 import java.util.List;

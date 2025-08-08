@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.disableapi.deployment;
+package com.netcracker.cloud.quarkus.disableapi.deployment;
 
 import org.qubership.cloud.disableapi.quarkus.DisableApiFilter;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;

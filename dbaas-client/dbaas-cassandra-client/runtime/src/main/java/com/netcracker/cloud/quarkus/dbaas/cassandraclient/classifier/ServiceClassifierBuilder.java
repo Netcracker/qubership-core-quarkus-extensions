@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.classifier;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.classifier;
 
 import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
 import org.qubership.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;

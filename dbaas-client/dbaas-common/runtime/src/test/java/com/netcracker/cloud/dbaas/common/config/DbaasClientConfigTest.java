@@ -1,4 +1,4 @@
-package org.qubership.cloud.dbaas.common.config;
+package com.netcracker.cloud.dbaas.common.config;
 
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.QuarkusTestProfile;

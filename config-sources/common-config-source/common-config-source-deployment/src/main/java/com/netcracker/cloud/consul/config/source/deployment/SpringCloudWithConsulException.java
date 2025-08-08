@@ -1,4 +1,4 @@
-package org.qubership.cloud.consul.config.source.deployment;
+package com.netcracker.cloud.consul.config.source.deployment;
 
 public class SpringCloudWithConsulException extends IllegalStateException {
 

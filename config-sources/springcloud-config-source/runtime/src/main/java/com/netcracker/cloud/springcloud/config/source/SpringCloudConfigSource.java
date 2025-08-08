@@ -1,4 +1,4 @@
-package org.qubership.cloud.springcloud.config.source;
+package com.netcracker.cloud.springcloud.config.source;
 
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.microprofile.config.spi.ConfigSource;

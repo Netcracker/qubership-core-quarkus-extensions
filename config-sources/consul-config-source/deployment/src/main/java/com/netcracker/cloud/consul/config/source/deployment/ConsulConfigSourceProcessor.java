@@ -1,4 +1,4 @@
-package org.qubership.cloud.consul.config.source.deployment;
+package com.netcracker.cloud.consul.config.source.deployment;
 
 import org.qubership.cloud.consul.config.source.runtime.ConsulConfigSourceFactoryBuilder;
 import org.qubership.cloud.springcloud.config.source.deployment.SpringCloudConfigSourceEnabledBuildItem;

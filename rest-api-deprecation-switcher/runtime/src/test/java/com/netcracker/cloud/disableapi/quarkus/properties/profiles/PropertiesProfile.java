@@ -1,4 +1,4 @@
-package org.qubership.cloud.disableapi.quarkus.properties.profiles;
+package com.netcracker.cloud.disableapi.quarkus.properties.profiles;
 
 import io.quarkus.test.junit.QuarkusTestProfile;
 

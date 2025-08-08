@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource;
 
 import org.qubership.cloud.core.quarkus.dbaas.datasource.classifier.MicroserviceClassifierBuilder;
 import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;

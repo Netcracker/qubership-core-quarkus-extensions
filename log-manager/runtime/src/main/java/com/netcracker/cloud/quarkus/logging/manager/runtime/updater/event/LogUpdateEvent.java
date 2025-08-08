@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.logging.manager.runtime.updater.event;
+package com.netcracker.cloud.quarkus.logging.manager.runtime.updater.event;
 
 import java.util.Map;
 

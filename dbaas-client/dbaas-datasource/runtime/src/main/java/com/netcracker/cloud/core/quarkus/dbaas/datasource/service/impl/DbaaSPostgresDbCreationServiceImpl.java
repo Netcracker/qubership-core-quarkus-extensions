@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.service.impl;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.service.impl;
 
 import com.google.common.base.Strings;
 import org.qubership.cloud.core.quarkus.dbaas.datasource.config.AgroalConnectionPoolConfigurationFactory;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.stomp.ws.runtime.sockjs;
+package com.netcracker.cloud.quarkus.stomp.ws.runtime.sockjs;
 
 import io.vertx.core.AsyncResult;
 import io.vertx.core.Future;

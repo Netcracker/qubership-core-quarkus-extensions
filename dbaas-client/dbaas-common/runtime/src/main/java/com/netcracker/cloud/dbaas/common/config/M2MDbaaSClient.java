@@ -1,4 +1,4 @@
-package org.qubership.cloud.dbaas.common.config;
+package com.netcracker.cloud.dbaas.common.config;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import okhttp3.OkHttpClient;

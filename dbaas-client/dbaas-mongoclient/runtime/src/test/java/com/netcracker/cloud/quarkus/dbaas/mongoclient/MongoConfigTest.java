@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.mongoclient;
+package com.netcracker.cloud.quarkus.dbaas.mongoclient;
 
 import org.qubership.cloud.quarkus.dbaas.mongoclient.config.properties.DbaasMongoDbCreationConfig;
 import io.quarkus.test.junit.QuarkusTest;

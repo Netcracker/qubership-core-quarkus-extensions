@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.routesregistration.runtime;
+package com.netcracker.cloud.quarkus.routesregistration.runtime;
 
 import org.qubership.cloud.routesregistration.common.gateway.route.RouteEntry;
 import org.qubership.cloud.routesregistration.common.gateway.route.RoutesRestRegistrationProcessor;

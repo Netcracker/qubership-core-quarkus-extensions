@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.testutils;
+package com.netcracker.cloud.core.quarkus.dbaas.testutils;
 
 
 import org.qubership.cloud.core.quarkus.dbaas.datasource.DbaaSDataSource;

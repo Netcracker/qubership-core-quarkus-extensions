@@ -1,4 +1,4 @@
-package org.qubership.cloud.springcloud.config.source.configuration;
+package com.netcracker.cloud.springcloud.config.source.configuration;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 import io.quarkus.test.common.QuarkusTestResourceLifecycleManager;

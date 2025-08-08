@@ -1,4 +1,4 @@
-package org.qubership.cloud.dbaas.common.config;
+package com.netcracker.cloud.dbaas.common.config;
 
 import okhttp3.OkHttpClient;
 import org.junit.jupiter.api.BeforeEach;

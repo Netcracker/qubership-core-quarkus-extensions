@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.routesregistration.deployment;
+package com.netcracker.cloud.quarkus.routesregistration.deployment;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;

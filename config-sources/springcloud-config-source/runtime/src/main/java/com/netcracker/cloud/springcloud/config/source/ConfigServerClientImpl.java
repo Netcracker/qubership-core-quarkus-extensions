@@ -1,4 +1,4 @@
-package org.qubership.cloud.springcloud.config.source;
+package com.netcracker.cloud.springcloud.config.source;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.core.JsonProcessingException;

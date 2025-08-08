@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.config.flyway;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.config.flyway;
 
 import org.flywaydb.core.api.configuration.FluentConfiguration;
 import org.jetbrains.annotations.Nullable;

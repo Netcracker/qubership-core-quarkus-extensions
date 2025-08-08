@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.entity;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

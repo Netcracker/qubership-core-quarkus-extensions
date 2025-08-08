@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.consul.client;
+package com.netcracker.cloud.quarkus.consul.client;
 
 import io.smallrye.config.ConfigMapping;
 import io.smallrye.config.WithDefault;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.stomp.ws.runtime.test.sockjs;
+package com.netcracker.cloud.quarkus.stomp.ws.runtime.test.sockjs;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

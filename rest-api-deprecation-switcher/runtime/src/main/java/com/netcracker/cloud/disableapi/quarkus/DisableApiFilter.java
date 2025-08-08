@@ -1,4 +1,4 @@
-package org.qubership.cloud.disableapi.quarkus;
+package com.netcracker.cloud.disableapi.quarkus;
 
 import org.qubership.cloud.core.error.rest.tmf.TmfErrorResponse;
 import org.qubership.cloud.disableapi.UrlsPatternsParser;

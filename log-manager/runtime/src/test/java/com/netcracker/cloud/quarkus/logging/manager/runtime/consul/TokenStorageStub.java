@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.logging.manager.runtime.consul;
+package com.netcracker.cloud.quarkus.logging.manager.runtime.consul;
 
 import org.qubership.cloud.consul.provider.common.TokenStorage;
 

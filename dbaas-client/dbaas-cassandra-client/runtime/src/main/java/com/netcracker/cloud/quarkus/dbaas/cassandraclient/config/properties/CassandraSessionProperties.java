@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties;
 
 import org.qubership.cloud.dbaas.client.cassandra.entity.DbaasCassandraMetricsProperties;
 import org.qubership.cloud.dbaas.client.cassandra.entity.DbaasCassandraProperties;

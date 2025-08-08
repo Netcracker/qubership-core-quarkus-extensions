@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.mongoclient;
+package com.netcracker.cloud.quarkus.dbaas.mongoclient;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

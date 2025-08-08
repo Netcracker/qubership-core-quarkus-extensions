@@ -1,4 +1,4 @@
-package org.qubership.cloud.dbaas.common.config;
+package com.netcracker.cloud.dbaas.common.config;
 
 import org.qubership.cloud.dbaas.common.classifier.DbaaSClassifierFactory;
 import io.quarkus.arc.DefaultBean;

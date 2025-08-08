@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.logging.manager.deployment;
+package com.netcracker.cloud.quarkus.logging.manager.deployment;
 
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.http.ContentType;

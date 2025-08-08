@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.stomp.ws.server.deployment;
+package com.netcracker.cloud.quarkus.stomp.ws.server.deployment;
 
 import org.qubership.cloud.quarkus.stomp.ws.runtime.StompServerRecorder;
 import io.quarkus.deployment.annotations.BuildProducer;

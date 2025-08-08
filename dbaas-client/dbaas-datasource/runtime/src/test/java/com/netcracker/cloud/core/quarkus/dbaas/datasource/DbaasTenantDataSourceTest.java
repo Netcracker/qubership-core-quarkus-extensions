@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource;
 
 import io.agroal.api.AgroalDataSource;
 import org.junit.jupiter.api.BeforeAll;

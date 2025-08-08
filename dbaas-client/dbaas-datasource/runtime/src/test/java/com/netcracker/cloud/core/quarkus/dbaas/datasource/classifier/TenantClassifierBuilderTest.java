@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.classifier;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.classifier;
 
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Assertions;

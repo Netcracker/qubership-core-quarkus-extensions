@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.migration;
+package com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.migration;
 
 import org.qubership.cloud.dbaas.client.cassandra.migration.model.settings.VersionSettings;
 import io.quarkus.runtime.annotations.ConfigGroup;

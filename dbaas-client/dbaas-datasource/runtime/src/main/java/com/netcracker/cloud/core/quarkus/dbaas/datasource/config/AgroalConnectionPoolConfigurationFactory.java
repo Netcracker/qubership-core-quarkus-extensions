@@ -1,4 +1,4 @@
-package org.qubership.cloud.core.quarkus.dbaas.datasource.config;
+package com.netcracker.cloud.core.quarkus.dbaas.datasource.config;
 
 import org.qubership.cloud.core.quarkus.dbaas.datasource.config.properties.DatasourceProperties;
 import org.qubership.cloud.core.quarkus.dbaas.datasource.config.properties.JDBCConfig;

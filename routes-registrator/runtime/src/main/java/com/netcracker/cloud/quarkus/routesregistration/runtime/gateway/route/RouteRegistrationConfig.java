@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.routesregistration.runtime.gateway.route;
+package com.netcracker.cloud.quarkus.routesregistration.runtime.gateway.route;
 
 import org.qubership.cloud.quarkus.security.auth.M2MManager;
 import org.qubership.cloud.routesregistration.common.gateway.route.*;

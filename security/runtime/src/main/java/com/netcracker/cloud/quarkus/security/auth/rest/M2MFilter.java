@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.security.auth.rest;
+package com.netcracker.cloud.quarkus.security.auth.rest;
 
 import jakarta.ws.rs.client.ClientRequestContext;
 import jakarta.ws.rs.client.ClientRequestFilter;

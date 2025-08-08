@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.logging.manager.deployment;
+package com.netcracker.cloud.quarkus.logging.manager.deployment;
 
 import org.qubership.cloud.log.manager.common.LogManager;
 import io.quarkus.arc.Arc;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.quarkus.stomp.ws.runtime.interceptors;
+package com.netcracker.cloud.quarkus.stomp.ws.runtime.interceptors;
 
 import io.vertx.ext.stomp.ServerFrame;
 
