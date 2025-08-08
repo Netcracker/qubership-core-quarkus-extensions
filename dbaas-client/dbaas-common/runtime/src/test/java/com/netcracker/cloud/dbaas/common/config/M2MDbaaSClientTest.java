@@ -3,7 +3,7 @@ package com.netcracker.cloud.dbaas.common.config;
 import okhttp3.OkHttpClient;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.qubership.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
 
 import java.lang.reflect.Field;
 import java.util.Optional;

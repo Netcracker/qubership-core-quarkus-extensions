@@ -1,12 +1,12 @@
 package com.netcracker.cloud.consul.config.source.runtime;
 
-import org.qubership.cloud.consul.provider.common.TokenStorage;
-import org.qubership.cloud.quarkus.consul.client.ConsulClient;
-import org.qubership.cloud.quarkus.consul.client.ConsulSourceConfig;
-import org.qubership.cloud.quarkus.consul.client.RetryableConsulClient;
-import org.qubership.cloud.quarkus.consul.client.model.GetValue;
-import org.qubership.cloud.quarkus.consul.client.http.QueryParams;
-import org.qubership.cloud.quarkus.consul.client.http.Response;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.quarkus.consul.client.ConsulClient;
+import com.netcracker.cloud.quarkus.consul.client.ConsulSourceConfig;
+import com.netcracker.cloud.quarkus.consul.client.RetryableConsulClient;
+import com.netcracker.cloud.quarkus.consul.client.model.GetValue;
+import com.netcracker.cloud.quarkus.consul.client.http.QueryParams;
+import com.netcracker.cloud.quarkus.consul.client.http.Response;
 import io.quarkus.arc.Arc;
 import io.smallrye.config.ConfigSourceContext;
 import io.smallrye.config.ConfigSourceFactory;

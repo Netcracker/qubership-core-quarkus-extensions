@@ -1,10 +1,10 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.service.impl;
 
-import org.qubership.cloud.dbaas.client.DbaasClient;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
-import org.qubership.cloud.dbaas.client.entity.database.type.PostgresDBType;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.service.PostgresqlLogicalDbProvider;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresDatabase;
+import com.netcracker.cloud.dbaas.client.entity.database.type.PostgresDBType;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.service.PostgresqlLogicalDbProvider;
 import jakarta.enterprise.context.ApplicationScoped;
 import org.apache.commons.lang3.NotImplementedException;
 import org.jetbrains.annotations.Nullable;

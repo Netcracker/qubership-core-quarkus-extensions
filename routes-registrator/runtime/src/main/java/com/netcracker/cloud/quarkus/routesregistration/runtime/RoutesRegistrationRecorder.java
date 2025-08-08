@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.routesregistration.runtime;
 
-import org.qubership.cloud.routesregistration.common.gateway.route.RouteEntry;
-import org.qubership.cloud.routesregistration.common.gateway.route.RoutesRestRegistrationProcessor;
+import com.netcracker.cloud.routesregistration.common.gateway.route.RouteEntry;
+import com.netcracker.cloud.routesregistration.common.gateway.route.RoutesRestRegistrationProcessor;
 import io.quarkus.arc.Arc;
 import io.quarkus.arc.InstanceHandle;
 import io.quarkus.runtime.annotations.Recorder;

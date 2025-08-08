@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.logging.manager.runtime.updater;
 
-import org.qubership.cloud.quarkus.logging.manager.runtime.updater.event.ConfigUpdatedEvent;
+import com.netcracker.cloud.quarkus.logging.manager.runtime.updater.event.ConfigUpdatedEvent;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -74,7 +74,7 @@ class LoggerUpdaterTest {
     @Test
     void doNotChangeLoggerUpdaterLogLvl() {
         Map<String, String> config = new HashMap<>();
-        config.put("quarkus.log.category.\"org.qubership.cloud.consul.config.source.runtime.updater.loglvl.LoggerUpdater\".level", "ERROR");
+        config.put("quarkus.log.category.\"com.netcracker.cloud.consul.config.source.runtime.updater.loglvl.LoggerUpdater\".level", "ERROR");
 
         Logger updaterLogger = Logger.getLogger("io.vertx.core.impl.ContextImpl");
         updaterLogger.setLevel(Level.OFF);
@@ -86,32 +86,32 @@ class LoggerUpdaterTest {
 
     @Test
     void testUpdateLogLevel() {
-        Logger logger = Logger.getLogger("org.qubership.cloud");
-        loggerUpdater.updateLogLevel(String.format(quarkusCategoryLevelTemplate, "org.qubership.cloud"), "TRACE");
+        Logger logger = Logger.getLogger("com.netcracker.cloud");
+        loggerUpdater.updateLogLevel(String.format(quarkusCategoryLevelTemplate, "com.netcracker.cloud"), "TRACE");
 
         assertEquals("TRACE", logger.getLevel().getName());
     }
 
     @Test
     void testLogLevelSnapshot() {
-        Logger logger = Logger.getLogger("org.qubership.cloud");
+        Logger logger = Logger.getLogger("com.netcracker.cloud");
         logger.setLevel(Level.parse("DEBUG"));
         assertEquals("DEBUG", logger.getLevel().getName());
 
         Map<String, String> config = new HashMap<>();
-        config.put("quarkus.log.category.\"org.qubership.cloud\".level", "trace");
+        config.put("quarkus.log.category.\"com.netcracker.cloud\".level", "trace");
 
         loggerUpdater.onConfigUpdated(new ConfigUpdatedEvent(config, ""));
 
         Map<String, String> logLevelSnapshot = loggerUpdater.getLogLevelSnapshot();
-        assertEquals("DEBUG", logLevelSnapshot.get("quarkus.log.category.\"org.qubership.cloud\".level"));
+        assertEquals("DEBUG", logLevelSnapshot.get("quarkus.log.category.\"com.netcracker.cloud\".level"));
         assertEquals("TRACE", logger.getLevel().getName());
 
         // return log to the previous level
         loggerUpdater.onConfigUpdated(new ConfigUpdatedEvent(Map.of(), ""));
 
         logLevelSnapshot = loggerUpdater.getLogLevelSnapshot();
-        assertFalse(logLevelSnapshot.containsKey("quarkus.log.category.\"org.qubership.cloud\".level"));
+        assertFalse(logLevelSnapshot.containsKey("quarkus.log.category.\"com.netcracker.cloud\".level"));
         assertEquals("DEBUG", logger.getLevel().getName());
     }
 
@@ -121,17 +121,17 @@ class LoggerUpdaterTest {
         logger.setLevel(Level.parse("DEBUG"));
         assertEquals("DEBUG", logger.getLevel().getName());
         Map<String, String> config = new HashMap<>();
-        config.put(String.format(quarkusCategoryLevelTemplate, "org.qubership.cloud"), "TRACE");
+        config.put(String.format(quarkusCategoryLevelTemplate, "com.netcracker.cloud"), "TRACE");
         config.put(String.format(quarkusCategoryLevelTemplate, "com.example"), "TRACE");
 
         loggerUpdater.onConfigUpdated(new ConfigUpdatedEvent(config,""));
 
-        verify(loggerUpdater).updateLogLevel(String.format(quarkusCategoryLevelTemplate, "org.qubership.cloud"), "TRACE");
+        verify(loggerUpdater).updateLogLevel(String.format(quarkusCategoryLevelTemplate, "com.netcracker.cloud"), "TRACE");
         verify(loggerUpdater).updateLogLevel(String.format(quarkusCategoryLevelTemplate, "com.example"), "TRACE");
 
         config.remove(String.format(quarkusCategoryLevelTemplate, "com.example"));
         loggerUpdater.onConfigUpdated(new ConfigUpdatedEvent(config, ""));
-        verify(loggerUpdater, times(2)).updateLogLevel(String.format(quarkusCategoryLevelTemplate, "org.qubership.cloud"), "TRACE");
+        verify(loggerUpdater, times(2)).updateLogLevel(String.format(quarkusCategoryLevelTemplate, "com.netcracker.cloud"), "TRACE");
         verify(loggerUpdater).updateLogLevel(String.format(quarkusCategoryLevelTemplate, "com.example"), "DEBUG"); // return to the previous level
 
         Map<String, String> logLevelSnapshot = loggerUpdater.getLogLevelSnapshot();

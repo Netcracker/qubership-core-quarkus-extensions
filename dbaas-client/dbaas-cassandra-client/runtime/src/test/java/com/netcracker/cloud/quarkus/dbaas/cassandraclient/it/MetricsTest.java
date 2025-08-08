@@ -1,12 +1,12 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.it;
 
-import org.qubership.cloud.framework.contexts.tenant.context.TenantContext;
-import org.qubership.cloud.dbaas.client.cassandra.entity.DbaasCassandraProperties;
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.metrics.MetricsProvider;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.CassandraProperties;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.service.CassandraClientCreation;
+import com.netcracker.cloud.framework.contexts.tenant.context.TenantContext;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.DbaasCassandraProperties;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.metrics.MetricsProvider;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.CassandraProperties;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.service.CassandraClientCreation;
 import io.micrometer.core.instrument.Meter;
 import io.micrometer.core.instrument.Metrics;
 import io.quarkus.test.junit.QuarkusTest;
@@ -22,13 +22,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.TENANT;
-import static org.qubership.cloud.dbaas.client.DbaasConst.TENANT_ID;
-import static org.qubership.cloud.dbaas.client.metrics.DatabaseMetricProperties.CLASSIFIER_TAG_PREFIX;
-import static org.qubership.cloud.quarkus.dbaas.cassandraclient.it.TestContainersCassandraLogicalDbProvider.SERVICE_KEYSPACE;
-import static org.qubership.cloud.quarkus.dbaas.cassandraclient.it.TestContainersCassandraLogicalDbProvider.TENANT_KEYSPACE_FORMAT;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.TENANT;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.TENANT_ID;
+import static com.netcracker.cloud.dbaas.client.metrics.DatabaseMetricProperties.CLASSIFIER_TAG_PREFIX;
+import static com.netcracker.cloud.quarkus.dbaas.cassandraclient.it.TestContainersCassandraLogicalDbProvider.SERVICE_KEYSPACE;
+import static com.netcracker.cloud.quarkus.dbaas.cassandraclient.it.TestContainersCassandraLogicalDbProvider.TENANT_KEYSPACE_FORMAT;
 
 @QuarkusTest
 @TestProfile(CassandraResourceProfile.class)

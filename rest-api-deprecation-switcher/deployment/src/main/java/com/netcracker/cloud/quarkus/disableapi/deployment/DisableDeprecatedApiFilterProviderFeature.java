@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.disableapi.deployment;
 
-import org.qubership.cloud.disableapi.quarkus.DisableApiFilter;
+import com.netcracker.cloud.disableapi.quarkus.DisableApiFilter;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.builditem.FeatureBuildItem;

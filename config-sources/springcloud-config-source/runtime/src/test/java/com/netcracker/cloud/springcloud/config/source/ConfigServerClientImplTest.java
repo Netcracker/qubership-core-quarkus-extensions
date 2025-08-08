@@ -10,8 +10,8 @@ import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.qubership.cloud.springcloud.config.source.configuration.InjectWireMock;
-import org.qubership.cloud.springcloud.config.source.configuration.WiremockConfiguration;
+import com.netcracker.cloud.springcloud.config.source.configuration.InjectWireMock;
+import com.netcracker.cloud.springcloud.config.source.configuration.WiremockConfiguration;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -5,13 +5,13 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.stubbing.Answer;
-import org.qubership.cloud.context.propagation.core.ContextManager;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.classifier.TenantClassifierBuilder;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
-import org.qubership.cloud.dbaas.client.entity.connection.PostgresDBConnection;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
-import org.qubership.cloud.framework.contexts.tenant.DefaultTenantProvider;
-import org.qubership.cloud.framework.contexts.tenant.TenantContextObject;
+import com.netcracker.cloud.context.propagation.core.ContextManager;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.classifier.TenantClassifierBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.dbaas.client.entity.connection.PostgresDBConnection;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresDatabase;
+import com.netcracker.cloud.framework.contexts.tenant.DefaultTenantProvider;
+import com.netcracker.cloud.framework.contexts.tenant.TenantContextObject;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.qubership.cloud.framework.contexts.tenant.BaseTenantProvider.TENANT_CONTEXT_NAME;
+import static com.netcracker.cloud.framework.contexts.tenant.BaseTenantProvider.TENANT_CONTEXT_NAME;
 
 public class DbaasTenantDataSourceTest {
     private static DbaaSDataSource dbaasDataSource;

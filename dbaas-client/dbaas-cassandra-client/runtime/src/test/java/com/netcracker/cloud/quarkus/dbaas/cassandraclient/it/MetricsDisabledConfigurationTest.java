@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.it;
 
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
-import org.qubership.cloud.dbaas.client.metrics.MetricsProvider;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
+import com.netcracker.cloud.dbaas.client.metrics.MetricsProvider;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.TestProfile;
 import jakarta.enterprise.inject.Instance;

@@ -1,8 +1,8 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client;
 
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
-import org.qubership.cloud.dbaas.common.classifier.DbaaSClassifierFactory;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.service.OpensearchDbaaSApiClient;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
+import com.netcracker.cloud.dbaas.common.classifier.DbaaSClassifierFactory;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.service.OpensearchDbaaSApiClient;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.opensearch.client.opensearch.OpenSearchClient;
@@ -13,8 +13,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;

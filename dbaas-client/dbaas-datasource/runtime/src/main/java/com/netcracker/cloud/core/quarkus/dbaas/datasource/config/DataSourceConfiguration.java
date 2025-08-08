@@ -1,10 +1,10 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.config;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.DbaaSDataSource;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.DbaasQuarkusPostgresqlDatasourceBuilder;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.classifier.MicroserviceClassifierBuilder;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.classifier.TenantClassifierBuilder;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.DbaaSDataSource;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.DbaasQuarkusPostgresqlDatasourceBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.classifier.MicroserviceClassifierBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.classifier.TenantClassifierBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
 import io.agroal.api.AgroalDataSource;
 import io.quarkus.arc.DefaultBean;
 import jakarta.enterprise.inject.Produces;

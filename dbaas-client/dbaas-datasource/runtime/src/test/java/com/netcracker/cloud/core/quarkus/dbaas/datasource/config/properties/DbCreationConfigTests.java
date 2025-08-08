@@ -1,6 +1,6 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.config.properties;
 
-import org.qubership.cloud.dbaas.client.entity.settings.PostgresSettings;
+import com.netcracker.cloud.dbaas.client.entity.settings.PostgresSettings;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.QuarkusTestProfile;
 import io.quarkus.test.junit.TestProfile;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.TEST_NAMESPACE;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.TEST_NAMESPACE;
 
 
 public class DbCreationConfigTests {

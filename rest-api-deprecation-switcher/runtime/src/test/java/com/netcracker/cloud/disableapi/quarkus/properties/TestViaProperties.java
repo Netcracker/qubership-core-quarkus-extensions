@@ -1,7 +1,7 @@
 package com.netcracker.cloud.disableapi.quarkus.properties;
 
-import org.qubership.cloud.disableapi.quarkus.AbstractTest;
-import org.qubership.cloud.disableapi.quarkus.properties.profiles.PropertiesProfile;
+import com.netcracker.cloud.disableapi.quarkus.AbstractTest;
+import com.netcracker.cloud.disableapi.quarkus.properties.profiles.PropertiesProfile;
 import io.quarkus.arc.profile.IfBuildProfile;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.TestProfile;

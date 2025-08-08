@@ -1,9 +1,9 @@
 package com.netcracker.cloud.quarkus.dbaas.mongoclient.config;
 
-import org.qubership.cloud.quarkus.dbaas.mongoclient.DbaaSMongoClient;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.classifier.ServiceClassifierBuilder;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.classifier.TenantClassifierBuilder;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.service.MongoClientCreation;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.DbaaSMongoClient;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.classifier.ServiceClassifierBuilder;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.classifier.TenantClassifierBuilder;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.service.MongoClientCreation;
 import io.quarkus.arc.DefaultBean;
 import jakarta.enterprise.inject.Produces;
 import jakarta.inject.Named;

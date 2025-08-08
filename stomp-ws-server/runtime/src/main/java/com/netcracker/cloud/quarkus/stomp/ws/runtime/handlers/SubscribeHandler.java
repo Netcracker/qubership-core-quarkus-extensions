@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.stomp.ws.runtime.handlers;
 
-import org.qubership.cloud.quarkus.stomp.ws.runtime.interceptors.SubscribeInterceptor;
+import com.netcracker.cloud.quarkus.stomp.ws.runtime.interceptors.SubscribeInterceptor;
 import io.vertx.ext.stomp.DefaultSubscribeHandler;
 import io.vertx.ext.stomp.ServerFrame;
 

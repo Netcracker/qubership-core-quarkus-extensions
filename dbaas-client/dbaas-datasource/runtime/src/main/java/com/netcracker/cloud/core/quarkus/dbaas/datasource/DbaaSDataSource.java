@@ -1,10 +1,10 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
-import org.qubership.cloud.dbaas.client.entity.database.DatasourceConnectorSettings;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.dbaas.client.entity.database.DatasourceConnectorSettings;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresDatabase;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
 import io.agroal.api.AgroalDataSource;
 import io.agroal.api.AgroalDataSourceMetrics;
 import io.agroal.api.AgroalPoolInterceptor;

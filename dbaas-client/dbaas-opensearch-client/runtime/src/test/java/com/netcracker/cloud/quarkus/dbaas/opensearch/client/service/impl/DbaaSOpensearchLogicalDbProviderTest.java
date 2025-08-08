@@ -1,19 +1,19 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.service.impl;
 
-import org.qubership.cloud.dbaas.client.DbaasClient;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchDBType;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndex;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.CommonTestMethods;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchDBType;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndex;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.CommonTestMethods;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

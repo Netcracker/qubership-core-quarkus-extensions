@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.it;
 
-import org.qubership.cloud.dbaas.client.cassandra.migration.model.settings.SchemaMigrationSettings;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.CassandraProperties;
+import com.netcracker.cloud.dbaas.client.cassandra.migration.model.settings.SchemaMigrationSettings;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.CassandraProperties;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.TestProfile;
 import jakarta.inject.Inject;

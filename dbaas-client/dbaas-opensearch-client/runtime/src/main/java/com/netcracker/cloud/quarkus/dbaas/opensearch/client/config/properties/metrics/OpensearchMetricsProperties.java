@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.config.properties.metrics;
 
-import org.qubership.cloud.dbaas.client.opensearch.entity.DbaasOpensearchMetricsProperties;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.DbaasOpensearchMetricsProperties;
 import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;
 import lombok.Getter;
@@ -20,7 +20,7 @@ public class OpensearchMetricsProperties {
     Optional<Boolean> enabled;
 
     /**
-     * Properties for configuring {@link org.qubership.cloud.dbaas.client.opensearch.metrics.OpensearchMetricsProvider#REQUESTS_SECONDS_METRIC_NAME} metric.
+     * Properties for configuring {@link com.netcracker.cloud.dbaas.client.opensearch.metrics.OpensearchMetricsProvider#REQUESTS_SECONDS_METRIC_NAME} metric.
      */
     @ConfigItem(name = "requests-seconds")
     RequestsSecondsMetricProperties requestsSeconds;

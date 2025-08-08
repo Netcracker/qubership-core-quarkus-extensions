@@ -9,18 +9,18 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.qubership.cloud.context.propagation.core.ContextManager;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.ContainerLogicalDbProvider;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.SkipOnDemand;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.Person;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.service.PersonService;
-import org.qubership.cloud.dbaas.client.entity.database.DatasourceConnectorSettings;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
-import org.qubership.cloud.framework.contexts.tenant.DefaultTenantProvider;
-import org.qubership.cloud.framework.contexts.tenant.context.TenantContext;
+import com.netcracker.cloud.context.propagation.core.ContextManager;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.ContainerLogicalDbProvider;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.SkipOnDemand;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.Person;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.service.PersonService;
+import com.netcracker.cloud.dbaas.client.entity.database.DatasourceConnectorSettings;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresDatabase;
+import com.netcracker.cloud.framework.contexts.tenant.DefaultTenantProvider;
+import com.netcracker.cloud.framework.contexts.tenant.context.TenantContext;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
@@ -29,8 +29,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.getServiceClassifier;
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.FIRST_TENANT_ID;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.getServiceClassifier;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.FIRST_TENANT_ID;
 
 @SkipOnDemand
 @QuarkusTestResource(PostgresqlContainerResource.class)

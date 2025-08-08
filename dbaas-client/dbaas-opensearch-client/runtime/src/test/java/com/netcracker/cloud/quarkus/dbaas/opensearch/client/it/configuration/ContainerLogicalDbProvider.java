@@ -1,10 +1,10 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.it.configuration;
 
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndex;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
-import org.qubership.cloud.dbaas.client.opensearch.service.OpensearchLogicalDbProvider;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndex;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
+import com.netcracker.cloud.dbaas.client.opensearch.service.OpensearchLogicalDbProvider;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static org.qubership.cloud.quarkus.dbaas.opensearch.client.it.configuration.OpensearchContainerResource.OPENSEARCH_PORT;
+import static com.netcracker.cloud.quarkus.dbaas.opensearch.client.it.configuration.OpensearchContainerResource.OPENSEARCH_PORT;
 
 @Slf4j
 @RequiredArgsConstructor

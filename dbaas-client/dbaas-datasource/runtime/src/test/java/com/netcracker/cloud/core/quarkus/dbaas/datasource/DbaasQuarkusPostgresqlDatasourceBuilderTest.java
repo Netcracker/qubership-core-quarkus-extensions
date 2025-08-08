@@ -1,9 +1,9 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresqlDiscriminator;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.common.classifier.ServiceClassifierBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresqlDiscriminator;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.common.classifier.ServiceClassifierBuilder;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 

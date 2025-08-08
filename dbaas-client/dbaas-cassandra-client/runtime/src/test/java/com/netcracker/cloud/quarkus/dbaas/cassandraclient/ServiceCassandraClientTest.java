@@ -1,11 +1,11 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient;
 
 import com.datastax.oss.driver.api.core.CqlSession;
-import org.qubership.cloud.dbaas.client.cassandra.entity.connection.CassandraDBConnection;
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.classifier.ServiceClassifierBuilder;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.service.CassandraClientCreation;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.connection.CassandraDBConnection;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.classifier.ServiceClassifierBuilder;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.service.CassandraClientCreation;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,9 +14,9 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
-import static org.qubership.cloud.quarkus.dbaas.cassandraclient.CommonTestMethods.prepareCassandraDBConnection;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.quarkus.dbaas.cassandraclient.CommonTestMethods.prepareCassandraDBConnection;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;

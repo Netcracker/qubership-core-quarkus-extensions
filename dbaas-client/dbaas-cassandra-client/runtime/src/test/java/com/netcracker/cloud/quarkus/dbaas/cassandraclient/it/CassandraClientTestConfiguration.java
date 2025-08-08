@@ -3,7 +3,7 @@ package com.netcracker.cloud.quarkus.dbaas.cassandraclient.it;
 import com.datastax.oss.driver.api.core.CqlSessionBuilder;
 import com.datastax.oss.driver.api.core.config.DefaultDriverOption;
 import com.datastax.oss.driver.api.core.config.ProgrammaticDriverConfigLoaderBuilder;
-import org.qubership.cloud.dbaas.client.cassandra.service.DbaasCqlSessionBuilderCustomizer;
+import com.netcracker.cloud.dbaas.client.cassandra.service.DbaasCqlSessionBuilderCustomizer;
 import jakarta.annotation.Priority;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Produces;

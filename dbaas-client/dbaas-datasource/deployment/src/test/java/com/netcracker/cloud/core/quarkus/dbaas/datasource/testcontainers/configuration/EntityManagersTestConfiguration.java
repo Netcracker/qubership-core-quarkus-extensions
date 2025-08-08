@@ -1,7 +1,7 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.DbaasQuarkusPostgresqlDatasourceBuilder;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.DbaasQuarkusPostgresqlDatasourceBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
 import io.agroal.api.AgroalDataSource;
 import io.quarkus.agroal.DataSource;
 import jakarta.annotation.Priority;
@@ -13,7 +13,7 @@ import jakarta.validation.constraints.NotNull;
 
 import org.flywaydb.core.Flyway;
 
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.getServiceClassifierBuilder;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.getServiceClassifierBuilder;
 
 @Dependent
 public class EntityManagersTestConfiguration {

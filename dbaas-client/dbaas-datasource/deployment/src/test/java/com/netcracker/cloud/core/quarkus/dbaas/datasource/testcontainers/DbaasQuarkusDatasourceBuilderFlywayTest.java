@@ -1,10 +1,10 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.DbaasQuarkusPostgresqlDatasourceBuilder;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
-import org.qubership.cloud.dbaas.client.service.flyway.FlywayRunner;
-import org.qubership.cloud.dbaas.common.classifier.ServiceClassifierBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.DbaasQuarkusPostgresqlDatasourceBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
+import com.netcracker.cloud.dbaas.client.service.flyway.FlywayRunner;
+import com.netcracker.cloud.dbaas.common.classifier.ServiceClassifierBuilder;
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;

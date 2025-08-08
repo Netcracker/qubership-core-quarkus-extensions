@@ -1,19 +1,19 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.service.impl;
 
-import org.qubership.cloud.dbaas.client.DbaaSClientOkHttpImpl;
-import org.qubership.cloud.dbaas.client.DbaasClient;
-import org.qubership.cloud.dbaas.client.entity.connection.PostgresDBConnection;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
-import org.qubership.cloud.dbaas.client.entity.database.type.PostgresDBType;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.DbaaSClientOkHttpImpl;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.entity.connection.PostgresDBConnection;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresDatabase;
+import com.netcracker.cloud.dbaas.client.entity.database.type.PostgresDBType;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
 import org.junit.jupiter.api.Test;
 
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.TEST_NAMESPACE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.TEST_NAMESPACE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

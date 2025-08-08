@@ -1,6 +1,6 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.service;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.Person;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.Person;
 
 import java.util.List;
 import java.util.function.Function;

@@ -1,7 +1,7 @@
 package com.netcracker.cloud.context.propagaton.messaging.kafka.quarkus;
 
-import org.qubership.cloud.context.propagation.core.RequestContextPropagation;
-import org.qubership.cloud.context.propagation.core.contextdata.OutgoingContextData;
+import com.netcracker.cloud.context.propagation.core.RequestContextPropagation;
+import com.netcracker.cloud.context.propagation.core.contextdata.OutgoingContextData;
 import io.smallrye.reactive.messaging.kafka.api.OutgoingKafkaRecordMetadata;
 import io.smallrye.reactive.messaging.providers.locals.ContextAwareMessage;
 import io.smallrye.reactive.messaging.rabbitmq.OutgoingRabbitMQMetadata;

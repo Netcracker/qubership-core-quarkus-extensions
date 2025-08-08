@@ -1,9 +1,9 @@
 package com.netcracker.cloud.quarkus.consul.client;
 
-import org.qubership.cloud.consul.provider.common.TokenStorage;
-import org.qubership.cloud.quarkus.consul.client.model.GetValue;
-import org.qubership.cloud.quarkus.consul.client.http.QueryParams;
-import org.qubership.cloud.quarkus.consul.client.http.Response;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.quarkus.consul.client.model.GetValue;
+import com.netcracker.cloud.quarkus.consul.client.http.QueryParams;
+import com.netcracker.cloud.quarkus.consul.client.http.Response;
 import org.jboss.logging.Logger;
 
 import java.util.List;

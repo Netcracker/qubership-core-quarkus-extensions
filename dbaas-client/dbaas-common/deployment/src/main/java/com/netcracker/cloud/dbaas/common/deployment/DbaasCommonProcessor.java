@@ -1,8 +1,8 @@
 package com.netcracker.cloud.dbaas.common.deployment;
 
-import org.qubership.cloud.dbaas.common.config.DbaaSClassifierProducer;
-import org.qubership.cloud.dbaas.common.config.DbaaSMetricsRegistrarProducer;
-import org.qubership.cloud.dbaas.common.config.DbaasClientProducer;
+import com.netcracker.cloud.dbaas.common.config.DbaaSClassifierProducer;
+import com.netcracker.cloud.dbaas.common.config.DbaaSMetricsRegistrarProducer;
+import com.netcracker.cloud.dbaas.common.config.DbaasClientProducer;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.builditem.FeatureBuildItem;

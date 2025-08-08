@@ -2,7 +2,7 @@ package com.netcracker.cloud.quarkus.stomp.ws.runtime.test.sockjs;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.qubership.cloud.quarkus.stomp.ws.runtime.sockjs.SockJsStompWebSocketConnectionImpl;
+import com.netcracker.cloud.quarkus.stomp.ws.runtime.sockjs.SockJsStompWebSocketConnectionImpl;
 import io.vertx.core.Future;
 import io.vertx.core.Handler;
 import io.vertx.core.Vertx;

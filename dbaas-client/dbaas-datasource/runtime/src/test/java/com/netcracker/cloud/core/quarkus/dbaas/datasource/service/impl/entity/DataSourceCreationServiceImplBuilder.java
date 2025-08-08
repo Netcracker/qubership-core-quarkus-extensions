@@ -1,13 +1,13 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.service.impl.entity;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.AgroalConnectionPoolConfigurationFactory;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.DbaasDatasourcePoolConfiguration;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.flyway.CoreFlywayConfig;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.properties.DbaaSPostgresDbCreationConfig;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.MigrationService;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.impl.DbaaSPostgresDbCreationServiceImpl;
-import org.qubership.cloud.dbaas.client.metrics.DbaaSMetricsRegistrar;
-import org.qubership.cloud.dbaas.client.service.PostgresqlLogicalDbProvider;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.AgroalConnectionPoolConfigurationFactory;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.DbaasDatasourcePoolConfiguration;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.flyway.CoreFlywayConfig;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.properties.DbaaSPostgresDbCreationConfig;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.MigrationService;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.impl.DbaaSPostgresDbCreationServiceImpl;
+import com.netcracker.cloud.dbaas.client.metrics.DbaaSMetricsRegistrar;
+import com.netcracker.cloud.dbaas.client.service.PostgresqlLogicalDbProvider;
 import io.agroal.api.configuration.AgroalConnectionFactoryConfiguration;
 import jakarta.enterprise.inject.Instance;
 import jakarta.enterprise.util.TypeLiteral;

@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.consul.client;
 
-import org.qubership.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
 
 public class TokenStorageStub implements TokenStorage {
         @Override

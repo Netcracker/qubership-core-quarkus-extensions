@@ -1,7 +1,7 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.service;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.Person;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.repository.PersonRepository;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.Person;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.repository.PersonRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;

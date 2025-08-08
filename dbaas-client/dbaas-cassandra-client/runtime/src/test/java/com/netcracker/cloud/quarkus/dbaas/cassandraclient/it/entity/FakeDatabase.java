@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.it.entity;
 
-import org.qubership.cloud.dbaas.client.entity.database.AbstractDatabase;
+import com.netcracker.cloud.dbaas.client.entity.database.AbstractDatabase;
 
 public class FakeDatabase extends AbstractDatabase {
 }

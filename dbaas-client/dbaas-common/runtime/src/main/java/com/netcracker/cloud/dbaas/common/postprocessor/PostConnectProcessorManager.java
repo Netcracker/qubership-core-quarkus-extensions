@@ -1,11 +1,11 @@
 package com.netcracker.cloud.dbaas.common.postprocessor;
 
-import org.qubership.cloud.dbaas.client.entity.database.AbstractDatabase;
+import com.netcracker.cloud.dbaas.client.entity.database.AbstractDatabase;
 import jakarta.enterprise.inject.Instance;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-import static org.qubership.cloud.dbaas.common.postprocessor.QuarkusPostConnectProcessor.POST_PROCESSOR_ORDER;
+import static com.netcracker.cloud.dbaas.common.postprocessor.QuarkusPostConnectProcessor.POST_PROCESSOR_ORDER;
 
 @Slf4j
 @AllArgsConstructor

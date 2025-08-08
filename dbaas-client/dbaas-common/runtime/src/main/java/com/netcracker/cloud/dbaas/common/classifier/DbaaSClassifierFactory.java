@@ -1,6 +1,6 @@
 package com.netcracker.cloud.dbaas.common.classifier;
 
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
 
 import java.util.Map;
 

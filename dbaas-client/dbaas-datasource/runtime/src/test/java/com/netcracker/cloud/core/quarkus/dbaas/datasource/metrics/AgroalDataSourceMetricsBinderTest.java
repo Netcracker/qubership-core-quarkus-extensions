@@ -14,7 +14,7 @@ import org.mockito.Mockito;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.metrics.AgroalDataSourceMetricsBinder.*;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.metrics.AgroalDataSourceMetricsBinder.*;
 
 class AgroalDataSourceMetricsBinderTest {
 

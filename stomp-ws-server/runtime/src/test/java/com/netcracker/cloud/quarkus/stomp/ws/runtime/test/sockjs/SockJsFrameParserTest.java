@@ -2,7 +2,7 @@ package com.netcracker.cloud.quarkus.stomp.ws.runtime.test.sockjs;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.qubership.cloud.quarkus.stomp.ws.runtime.sockjs.SockJsFrameParser;
+import com.netcracker.cloud.quarkus.stomp.ws.runtime.sockjs.SockJsFrameParser;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.parsetools.impl.RecordParserImpl;
 import io.vertx.ext.stomp.StompServerOptions;

@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.logging.manager.deployment;
 
-import org.qubership.cloud.quarkus.logging.manager.runtime.consul.ConsulLoggingConfigRecorder;
-import org.qubership.cloud.quarkus.logging.manager.runtime.consul.ConsulLoggingConfigWatchFactory;
+import com.netcracker.cloud.quarkus.logging.manager.runtime.consul.ConsulLoggingConfigRecorder;
+import com.netcracker.cloud.quarkus.logging.manager.runtime.consul.ConsulLoggingConfigWatchFactory;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.annotations.ExecutionTime;

@@ -1,10 +1,10 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.service.impl;
 
-import org.qubership.cloud.dbaas.client.DbaasClient;
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.type.CassandraDBType;
-import org.qubership.cloud.dbaas.client.cassandra.service.CassandraLogicalDbProvider;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.type.CassandraDBType;
+import com.netcracker.cloud.dbaas.client.cassandra.service.CassandraLogicalDbProvider;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import org.apache.commons.lang3.NotImplementedException;

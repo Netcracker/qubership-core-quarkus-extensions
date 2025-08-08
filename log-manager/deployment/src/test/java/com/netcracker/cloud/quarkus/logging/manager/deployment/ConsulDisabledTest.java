@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.logging.manager.deployment;
 
-import org.qubership.cloud.log.manager.common.LogManager;
+import com.netcracker.cloud.log.manager.common.LogManager;
 import io.quarkus.arc.Arc;
 import io.quarkus.runtime.StartupEvent;
 import io.quarkus.test.junit.QuarkusTest;

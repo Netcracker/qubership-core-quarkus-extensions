@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.deployment;
 
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.DbaasOpensearchConfiguration;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.DbaasOpensearchConfiguration;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.builditem.FeatureBuildItem;

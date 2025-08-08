@@ -4,11 +4,11 @@ import lombok.SneakyThrows;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.qubership.cloud.context.propagation.core.ContextManager;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.DataSourceConfiguration;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.framework.contexts.tenant.DefaultTenantProvider;
-import org.qubership.cloud.framework.contexts.tenant.context.TenantContext;
+import com.netcracker.cloud.context.propagation.core.ContextManager;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.DataSourceConfiguration;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.framework.contexts.tenant.DefaultTenantProvider;
+import com.netcracker.cloud.framework.contexts.tenant.context.TenantContext;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -20,7 +20,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.TEST_NAMESPACE;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.TEST_NAMESPACE;
 
 
 public class TenantClassifierBuilderTest {

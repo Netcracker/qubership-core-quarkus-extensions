@@ -9,7 +9,7 @@ import jakarta.inject.Named;
 import org.flywaydb.core.Flyway;
 import org.jboss.logging.Logger;
 
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.config.DataSourceConfiguration.SERVICE_DATASOURCE;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.config.DataSourceConfiguration.SERVICE_DATASOURCE;
 
 @ApplicationScoped
 public class CoreFlywayStartupConfiguration {

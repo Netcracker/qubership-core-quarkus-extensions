@@ -1,11 +1,11 @@
 package com.netcracker.cloud.quarkus.dbaas.mongoclient;
 
 import com.mongodb.client.MongoClient;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.classifier.ServiceClassifierBuilder;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.entity.database.MongoDatabase;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.service.MongoClientCreation;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.classifier.ServiceClassifierBuilder;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.database.MongoDatabase;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.service.MongoClientCreation;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,8 +14,8 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;

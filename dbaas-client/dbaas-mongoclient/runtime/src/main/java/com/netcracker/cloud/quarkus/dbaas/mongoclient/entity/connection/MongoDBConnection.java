@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.connection;
 
 import com.mongodb.client.MongoClient;
-import org.qubership.cloud.dbaas.client.entity.connection.DatabaseConnection;
+import com.netcracker.cloud.dbaas.client.entity.connection.DatabaseConnection;
 import lombok.Data;
 import lombok.ToString;
 

@@ -1,10 +1,10 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client;
 
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.service.OpensearchDbaaSApiClient;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.service.OpensearchDbaaSApiClient;
 import org.apache.hc.core5.http.HttpStatus;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

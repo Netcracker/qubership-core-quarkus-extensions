@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.routesregistration.deployment.resource.hierarchy;
 
-import org.qubership.cloud.routesregistration.common.annotation.Route;
+import com.netcracker.cloud.routesregistration.common.annotation.Route;
 import jakarta.ws.rs.Path;
 
 

@@ -3,8 +3,8 @@ package com.netcracker.cloud.quarkus.security.auth.rest;
 import jakarta.ws.rs.client.ClientRequestContext;
 import jakarta.ws.rs.client.ClientRequestFilter;
 import io.vertx.core.http.HttpHeaders;
-import org.qubership.cloud.quarkus.security.auth.M2MManager;
-import org.qubership.cloud.security.core.auth.Token;
+import com.netcracker.cloud.quarkus.security.auth.M2MManager;
+import com.netcracker.cloud.security.core.auth.Token;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

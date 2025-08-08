@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.routesregistration.deployment;
 
-import org.qubership.cloud.routesregistration.common.gateway.route.RouteEntry;
+import com.netcracker.cloud.routesregistration.common.gateway.route.RouteEntry;
 import io.quarkus.builder.item.SimpleBuildItem;
 
 import java.util.ArrayList;

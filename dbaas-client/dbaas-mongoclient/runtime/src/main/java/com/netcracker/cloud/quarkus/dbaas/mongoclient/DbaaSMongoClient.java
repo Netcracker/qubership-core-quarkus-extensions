@@ -7,10 +7,10 @@ import com.mongodb.client.ListDatabasesIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoIterable;
 import com.mongodb.connection.ClusterDescription;
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.entity.database.MongoDatabase;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.service.MongoClientCreation;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.database.MongoDatabase;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.service.MongoClientCreation;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 

@@ -1,7 +1,7 @@
 package com.netcracker.cloud.springcloud.config.source.deployment;
 
-import org.qubership.cloud.springcloud.config.source.PropertyManager;
-import org.qubership.cloud.springcloud.config.source.SpringCloudConfigSourceBuilder;
+import com.netcracker.cloud.springcloud.config.source.PropertyManager;
+import com.netcracker.cloud.springcloud.config.source.SpringCloudConfigSourceBuilder;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;

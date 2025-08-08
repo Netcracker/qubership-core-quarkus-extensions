@@ -1,10 +1,10 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers;
 
-import org.qubership.cloud.framework.contexts.tenant.context.TenantContext;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.framework.contexts.tenant.context.TenantContext;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresDatabase;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
 import io.micrometer.core.instrument.Meter;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Metrics;
@@ -22,15 +22,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.FIRST_TENANT_ID;
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.MICROSERVICE_CLASSIFIER_BUILDER;
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.SECOND_TENANT_ID;
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.TENANT_CLASSIFIER_BUILDER;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.TENANT;
-import static org.qubership.cloud.dbaas.client.DbaasConst.TENANT_ID;
-import static org.qubership.cloud.dbaas.client.metrics.DatabaseMetricProperties.CLASSIFIER_TAG_PREFIX;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.FIRST_TENANT_ID;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.MICROSERVICE_CLASSIFIER_BUILDER;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.SECOND_TENANT_ID;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.TENANT_CLASSIFIER_BUILDER;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.TENANT;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.TENANT_ID;
+import static com.netcracker.cloud.dbaas.client.metrics.DatabaseMetricProperties.CLASSIFIER_TAG_PREFIX;
 
 @QuarkusTestResource(PostgresqlContainerResource.class)
 @TestProfile(MetricsTest.MetricsEnabledTestProfile.class)

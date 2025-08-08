@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.logging.manager.runtime.updater;
 
-import org.qubership.cloud.quarkus.logging.manager.runtime.updater.event.ConfigUpdatedEvent;
+import com.netcracker.cloud.quarkus.logging.manager.runtime.updater.event.ConfigUpdatedEvent;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.event.Observes;
 

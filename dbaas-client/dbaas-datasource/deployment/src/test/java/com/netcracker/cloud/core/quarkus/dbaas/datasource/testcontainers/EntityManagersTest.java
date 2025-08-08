@@ -1,9 +1,9 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.SkipOnDemand;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.Person;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.secondary.PersonSecondary;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.SkipOnDemand;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.Person;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.secondary.PersonSecondary;
 import io.quarkus.hibernate.orm.PersistenceUnit;
 import io.quarkus.narayana.jta.QuarkusTransaction;
 import io.quarkus.test.common.QuarkusTestResource;

@@ -1,6 +1,6 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.config.properties;
 
-import org.qubership.cloud.dbaas.client.entity.settings.PostgresSettings;
+import com.netcracker.cloud.dbaas.client.entity.settings.PostgresSettings;
 import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;
 

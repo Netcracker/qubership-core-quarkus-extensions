@@ -1,6 +1,6 @@
 package com.netcracker.cloud.disableapi.quarkus.annotations;
 
-import org.qubership.cloud.disableapi.quarkus.AbstractTest;
+import com.netcracker.cloud.disableapi.quarkus.AbstractTest;
 import io.quarkus.arc.profile.UnlessBuildProfile;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;

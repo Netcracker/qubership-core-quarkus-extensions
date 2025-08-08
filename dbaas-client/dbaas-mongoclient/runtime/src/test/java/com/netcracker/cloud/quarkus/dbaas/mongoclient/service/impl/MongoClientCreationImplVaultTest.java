@@ -1,12 +1,12 @@
 package com.netcracker.cloud.quarkus.dbaas.mongoclient.service.impl;
 
-import org.qubership.cloud.dbaas.client.DbaaSClientOkHttpImpl;
-import org.qubership.cloud.dbaas.client.DbaasClient;
-import org.qubership.cloud.dbaas.client.entity.DbaasApiProperties;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.common.config.DbaasApiPropertiesConfig;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.config.properties.DbaasMongoDbCreationConfig;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
+import com.netcracker.cloud.dbaas.client.DbaaSClientOkHttpImpl;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.entity.DbaasApiProperties;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.common.config.DbaasApiPropertiesConfig;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.config.properties.DbaasMongoDbCreationConfig;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
 import org.junit.jupiter.api.BeforeAll;
 
 import static org.mockito.ArgumentMatchers.any;
@@ -33,8 +33,8 @@ public class MongoClientCreationImplVaultTest extends ContainerMongoDbBaseConfig
         mongoDBConnection.setAuthDbName(DATABASE);
 
         mongoClientCreationImpl.namespace = "test-namespace";
-        org.qubership.cloud.quarkus.dbaas.mongoclient.entity.database.MongoDatabase mongoDatabase =
-                new org.qubership.cloud.quarkus.dbaas.mongoclient.entity.database.MongoDatabase();
+        com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.database.MongoDatabase mongoDatabase =
+                new com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.database.MongoDatabase();
         mongoDatabase.setConnectionProperties(mongoDBConnection);
         mongoDatabase.setName(DATABASE);
 

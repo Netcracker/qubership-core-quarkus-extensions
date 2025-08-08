@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.config;
 
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.config.properties.metrics.OpensearchMetricsProperties;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.config.properties.metrics.OpensearchMetricsProperties;
 import io.quarkus.runtime.annotations.ConfigItem;
 import io.quarkus.runtime.annotations.ConfigPhase;
 import io.quarkus.runtime.annotations.ConfigRoot;

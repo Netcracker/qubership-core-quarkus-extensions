@@ -1,24 +1,24 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.service.impl;
 
 import com.google.common.base.Strings;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.AgroalConnectionPoolConfigurationFactory;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.DbaasDatasourcePoolConfiguration;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.flyway.CoreFlywayConfig;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.properties.DbaaSPostgresDbCreationConfig;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.properties.PostgresDbConfiguration;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.MigrationService;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.agroal.AgroalConnectionFactoryConfigurationBuilder;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.agroal.auth.DbaasSecurityProvider;
-import org.qubership.cloud.dbaas.client.entity.database.DatasourceConnectorSettings;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
-import org.qubership.cloud.dbaas.client.entity.database.type.PostgresDBType;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.metrics.DatabaseMetricProperties;
-import org.qubership.cloud.dbaas.client.metrics.DbaaSMetricsRegistrar;
-import org.qubership.cloud.dbaas.client.service.PostgresqlLogicalDbProvider;
-import org.qubership.cloud.dbaas.client.service.flyway.FlywayContext;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.AgroalConnectionPoolConfigurationFactory;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.DbaasDatasourcePoolConfiguration;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.flyway.CoreFlywayConfig;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.properties.DbaaSPostgresDbCreationConfig;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.properties.PostgresDbConfiguration;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.MigrationService;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.agroal.AgroalConnectionFactoryConfigurationBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.agroal.auth.DbaasSecurityProvider;
+import com.netcracker.cloud.dbaas.client.entity.database.DatasourceConnectorSettings;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresDatabase;
+import com.netcracker.cloud.dbaas.client.entity.database.type.PostgresDBType;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.metrics.DatabaseMetricProperties;
+import com.netcracker.cloud.dbaas.client.metrics.DbaaSMetricsRegistrar;
+import com.netcracker.cloud.dbaas.client.service.PostgresqlLogicalDbProvider;
+import com.netcracker.cloud.dbaas.client.service.flyway.FlywayContext;
 import io.agroal.api.AgroalDataSource;
 import io.agroal.api.configuration.AgroalConnectionFactoryConfiguration;
 import io.agroal.api.configuration.supplier.AgroalConnectionFactoryConfigurationSupplier;
@@ -40,9 +40,9 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.metrics.PostgresMicrometerMetricsProvider.DATASOURCE_PARAMETER;
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.metrics.PostgresMicrometerMetricsProvider.SCHEMA_TAG;
-import static org.qubership.cloud.dbaas.client.DbaasConst.*;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.metrics.PostgresMicrometerMetricsProvider.DATASOURCE_PARAMETER;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.metrics.PostgresMicrometerMetricsProvider.SCHEMA_TAG;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.*;
 
 @Slf4j
 @ApplicationScoped

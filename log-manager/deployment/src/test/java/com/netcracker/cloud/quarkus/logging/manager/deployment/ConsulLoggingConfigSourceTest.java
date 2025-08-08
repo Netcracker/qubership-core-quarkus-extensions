@@ -1,14 +1,14 @@
 package com.netcracker.cloud.quarkus.logging.manager.deployment;
 
-import org.qubership.cloud.log.manager.common.LogManager;
+import com.netcracker.cloud.log.manager.common.LogManager;
 import io.quarkus.runtime.StartupEvent;
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.Test;
-import org.qubership.cloud.quarkus.consul.client.ConsulSourceConfig;
-import org.qubership.cloud.quarkus.logging.manager.runtime.consul.ConsulLoggingConfigWatchFactory;
-import org.qubership.cloud.quarkus.logging.manager.runtime.consul.ConsulLoggingSourceConfig;
+import com.netcracker.cloud.quarkus.consul.client.ConsulSourceConfig;
+import com.netcracker.cloud.quarkus.logging.manager.runtime.consul.ConsulLoggingConfigWatchFactory;
+import com.netcracker.cloud.quarkus.logging.manager.runtime.consul.ConsulLoggingSourceConfig;
 
 import java.util.List;
 import java.util.Optional;

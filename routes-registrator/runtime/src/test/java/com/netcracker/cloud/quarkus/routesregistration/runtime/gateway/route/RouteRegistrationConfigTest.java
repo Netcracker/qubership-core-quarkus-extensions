@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.routesregistration.runtime.gateway.route;
 
-import org.qubership.cloud.routesregistration.common.gateway.route.ControlPlaneClient;
+import com.netcracker.cloud.routesregistration.common.gateway.route.ControlPlaneClient;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Produces;
@@ -10,7 +10,7 @@ import okhttp3.OkHttpClient;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.qubership.cloud.quarkus.routesregistration.runtime.gateway.route.RouteRegistrationConfig.CONTROL_PLANE_HTTP_CLIENT;
+import static com.netcracker.cloud.quarkus.routesregistration.runtime.gateway.route.RouteRegistrationConfig.CONTROL_PLANE_HTTP_CLIENT;
 
 
 @QuarkusTest

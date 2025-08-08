@@ -1,8 +1,8 @@
 package com.netcracker.cloud.quarkus.routesregistration.runtime.gateway.route;
 
-import org.qubership.cloud.routesregistration.common.gateway.route.ControlPlaneClient;
-import org.qubership.cloud.routesregistration.common.gateway.route.rest.CommonRequest;
-import org.qubership.cloud.routesregistration.common.gateway.route.rest.RegistrationRequest;
+import com.netcracker.cloud.routesregistration.common.gateway.route.ControlPlaneClient;
+import com.netcracker.cloud.routesregistration.common.gateway.route.rest.CommonRequest;
+import com.netcracker.cloud.routesregistration.common.gateway.route.rest.RegistrationRequest;
 import io.vertx.core.json.Json;
 import okhttp3.*;
 import org.jboss.logging.Logger;

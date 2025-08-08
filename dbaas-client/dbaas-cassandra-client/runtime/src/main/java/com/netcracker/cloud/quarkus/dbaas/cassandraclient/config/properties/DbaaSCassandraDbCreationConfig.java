@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties;
 
-import org.qubership.cloud.dbaas.common.config.DbaasApiPropertiesConfig;
+import com.netcracker.cloud.dbaas.common.config.DbaasApiPropertiesConfig;
 import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;
 import lombok.Getter;

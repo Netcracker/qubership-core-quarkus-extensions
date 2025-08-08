@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.stomp.ws.server.deployment;
 
-import org.qubership.cloud.quarkus.stomp.ws.runtime.StompServerRecorder;
+import com.netcracker.cloud.quarkus.stomp.ws.runtime.StompServerRecorder;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.annotations.ExecutionTime;

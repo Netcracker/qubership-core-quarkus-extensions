@@ -1,10 +1,10 @@
 package com.netcracker.cloud.quarkus.routesregistration.deployment;
 
-import org.qubership.cloud.quarkus.routesregistration.runtime.RoutesRegistrationRecorder;
-import org.qubership.cloud.routesregistration.common.annotation.*;
-import org.qubership.cloud.routesregistration.common.annotation.processing.*;
-import org.qubership.cloud.routesregistration.common.gateway.route.RouteEntry;
-import org.qubership.cloud.routesregistration.common.gateway.route.RouteType;
+import com.netcracker.cloud.quarkus.routesregistration.runtime.RoutesRegistrationRecorder;
+import com.netcracker.cloud.routesregistration.common.annotation.*;
+import com.netcracker.cloud.routesregistration.common.annotation.processing.*;
+import com.netcracker.cloud.routesregistration.common.gateway.route.RouteEntry;
+import com.netcracker.cloud.routesregistration.common.gateway.route.RouteType;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.annotations.Record;
 import io.quarkus.deployment.builditem.ApplicationStartBuildItem;

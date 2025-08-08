@@ -1,11 +1,11 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
-import org.qubership.cloud.dbaas.client.entity.database.DatasourceConnectorSettings;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresqlDiscriminator;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
-import org.qubership.cloud.dbaas.client.service.flyway.FlywayRunner;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.dbaas.client.entity.database.DatasourceConnectorSettings;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresqlDiscriminator;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
+import com.netcracker.cloud.dbaas.client.service.flyway.FlywayRunner;
 
 import javax.sql.DataSource;
 import java.util.HashMap;

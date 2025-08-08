@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.config.properties.metrics;
 
-import org.qubership.cloud.dbaas.client.opensearch.entity.metrics.OpensearchClientRequestsSecondsMetricType;
-import org.qubership.cloud.dbaas.client.opensearch.entity.metrics.OpensearchClientRequestsSecondsMetricsProperties;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.metrics.OpensearchClientRequestsSecondsMetricType;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.metrics.OpensearchClientRequestsSecondsMetricsProperties;
 import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;
 import lombok.Getter;

@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.stomp.ws.runtime.test;
 
-import org.qubership.cloud.quarkus.stomp.ws.runtime.StompServerRecorder;
-import org.qubership.cloud.quarkus.stomp.ws.runtime.sockjs.SockJsStompServer;
+import com.netcracker.cloud.quarkus.stomp.ws.runtime.StompServerRecorder;
+import com.netcracker.cloud.quarkus.stomp.ws.runtime.sockjs.SockJsStompServer;
 import io.quarkus.test.junit.QuarkusTest;
 import io.vertx.core.Vertx;
 import io.vertx.ext.stomp.StompServer;

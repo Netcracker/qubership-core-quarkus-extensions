@@ -1,6 +1,6 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.config;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.properties.DatasourceProperties;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.properties.DatasourceProperties;
 import io.agroal.api.configuration.AgroalConnectionFactoryConfiguration;
 import io.agroal.api.configuration.AgroalConnectionPoolConfiguration;
 import io.agroal.api.configuration.supplier.AgroalConnectionFactoryConfigurationSupplier;

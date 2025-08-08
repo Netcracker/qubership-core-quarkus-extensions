@@ -1,10 +1,10 @@
 package com.netcracker.cloud.quarkus.consul.client;
 
-import org.qubership.cloud.consul.provider.common.OkHttpTokenStorageFactory;
-import org.qubership.cloud.consul.provider.common.TokenStorage;
-import org.qubership.cloud.consul.provider.common.TokenStorageFactory;
-import org.qubership.cloud.quarkus.security.auth.M2MManager;
-import org.qubership.cloud.security.core.utils.tls.TlsUtils;
+import com.netcracker.cloud.consul.provider.common.OkHttpTokenStorageFactory;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.consul.provider.common.TokenStorageFactory;
+import com.netcracker.cloud.quarkus.security.auth.M2MManager;
+import com.netcracker.cloud.security.core.utils.tls.TlsUtils;
 import io.quarkus.arc.DefaultBean;
 import io.quarkus.arc.properties.UnlessBuildProperty;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -30,7 +30,7 @@ public class ConsulClientConfiguration {
     @Deprecated(since = "6.3.6", forRemoval = true)
     public com.ecwid.consul.v1.ConsulClient consulClient(
             @ConfigProperty(name = "quarkus.consul-source-config.agent.url") Optional<String> agentUrl) {
-        log.warn("com.ecwid.consul.v1.ConsulClient is deprecated and will be removed. Use org.qubership.cloud.quarkus.consul.client instead.");
+        log.warn("com.ecwid.consul.v1.ConsulClient is deprecated and will be removed. Use com.netcracker.cloud.quarkus.consul.client instead.");
         Optional<URL> consulUrl = getURL(agentUrl);
         if (consulUrl.isEmpty()) {
             log.error("Cannot find consul agent url");

@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.it;
 
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.config.DbaaSOpensearchConfigurationProperty;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.config.DbaaSOpensearchCreationConfig;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.config.DbaaSOpensearchConfigurationProperty;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.config.DbaaSOpensearchCreationConfig;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.QuarkusTestProfile;
 import io.quarkus.test.junit.TestProfile;

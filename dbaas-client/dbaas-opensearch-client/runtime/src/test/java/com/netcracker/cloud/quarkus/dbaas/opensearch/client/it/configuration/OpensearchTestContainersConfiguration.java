@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.it.configuration;
 
-import org.qubership.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
 import jakarta.annotation.Priority;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.Dependent;

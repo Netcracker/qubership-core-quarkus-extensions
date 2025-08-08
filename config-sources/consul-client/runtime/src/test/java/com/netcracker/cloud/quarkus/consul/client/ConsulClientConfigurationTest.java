@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.consul.client;
 
-import org.qubership.cloud.consul.provider.common.TokenStorage;
-import org.qubership.cloud.consul.provider.common.TokenStorageFactory;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.consul.provider.common.TokenStorageFactory;
 import io.quarkus.test.InjectMock;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.QuarkusTestProfile;

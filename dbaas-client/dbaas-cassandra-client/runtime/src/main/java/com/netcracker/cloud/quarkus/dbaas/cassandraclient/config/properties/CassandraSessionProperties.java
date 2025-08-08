@@ -1,15 +1,15 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties;
 
-import org.qubership.cloud.dbaas.client.cassandra.entity.DbaasCassandraMetricsProperties;
-import org.qubership.cloud.dbaas.client.cassandra.entity.DbaasCassandraProperties;
-import org.qubership.cloud.dbaas.client.cassandra.entity.metrics.MetricConfigurationParameters;
-import org.qubership.cloud.dbaas.client.cassandra.entity.metrics.NodeMetricsConfiguration;
-import org.qubership.cloud.dbaas.client.cassandra.entity.metrics.SessionMetricsConfiguration;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.metrics.MetricParameters;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.metrics.MetricsProperties;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.metrics.NodeProperties;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.metrics.SessionProperties;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.migration.MigrationProperties;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.DbaasCassandraMetricsProperties;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.DbaasCassandraProperties;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.metrics.MetricConfigurationParameters;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.metrics.NodeMetricsConfiguration;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.metrics.SessionMetricsConfiguration;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.metrics.MetricParameters;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.metrics.MetricsProperties;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.metrics.NodeProperties;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.metrics.SessionProperties;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.migration.MigrationProperties;
 import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;
 import lombok.Getter;

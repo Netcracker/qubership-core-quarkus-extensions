@@ -1,15 +1,15 @@
 package com.netcracker.cloud.quarkus.dbaas.mongoclient.service.impl;
 
-import org.qubership.cloud.dbaas.client.DbaaSClientOkHttpImpl;
-import org.qubership.cloud.dbaas.client.DbaasClient;
-import org.qubership.cloud.dbaas.client.entity.DbaasApiProperties;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.common.config.DbaasApiPropertiesConfig;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.config.MongoClientConfiguration;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.config.properties.DbaasMongoDbCreationConfig;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.entity.database.MongoDatabase;
+import com.netcracker.cloud.dbaas.client.DbaaSClientOkHttpImpl;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.entity.DbaasApiProperties;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.common.config.DbaasApiPropertiesConfig;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.config.MongoClientConfiguration;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.config.properties.DbaasMongoDbCreationConfig;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.database.MongoDatabase;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.QuarkusTestProfile;
 import io.quarkus.test.junit.TestProfile;
@@ -24,8 +24,8 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;

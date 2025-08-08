@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
-import static org.qubership.cloud.springcloud.config.source.Constants.CS_RESPONSE_STRING;
+import static com.netcracker.cloud.springcloud.config.source.Constants.CS_RESPONSE_STRING;
 
 public class WiremockConfiguration implements QuarkusTestResourceLifecycleManager {
 

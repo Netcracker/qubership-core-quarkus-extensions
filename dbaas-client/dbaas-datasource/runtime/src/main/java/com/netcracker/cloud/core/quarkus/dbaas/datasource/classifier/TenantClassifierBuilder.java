@@ -1,17 +1,17 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.classifier;
 
 import lombok.extern.slf4j.Slf4j;
-import org.qubership.cloud.context.propagation.core.ContextManager;
-import org.qubership.cloud.dbaas.client.DbaasConst;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSChainClassifierBuilder;
-import org.qubership.cloud.framework.contexts.tenant.TenantContextObject;
+import com.netcracker.cloud.context.propagation.core.ContextManager;
+import com.netcracker.cloud.dbaas.client.DbaasConst;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSChainClassifierBuilder;
+import com.netcracker.cloud.framework.contexts.tenant.TenantContextObject;
 
 import java.util.Map;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.TENANT_ID;
-import static org.qubership.cloud.framework.contexts.tenant.BaseTenantProvider.TENANT_CONTEXT_NAME;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.TENANT_ID;
+import static com.netcracker.cloud.framework.contexts.tenant.BaseTenantProvider.TENANT_CONTEXT_NAME;
 
 @Slf4j
 @Deprecated(forRemoval = true)

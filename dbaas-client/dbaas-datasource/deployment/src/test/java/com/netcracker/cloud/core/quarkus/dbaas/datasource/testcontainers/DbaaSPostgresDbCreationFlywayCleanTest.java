@@ -1,11 +1,11 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.flyway.CoreFlywayConfig;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.flyway.FlywayConfig;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.flyway.CoreFlywayConfig;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.flyway.FlywayConfig;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.DbaaSPostgresDbCreationService;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresDatabase;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
 import io.quarkus.flyway.runtime.FlywayRuntimeConfig;
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
@@ -21,8 +21,8 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.TEST_NAMESPACE;
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.getServiceClassifier;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.TEST_NAMESPACE;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.CommonTestUtils.getServiceClassifier;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

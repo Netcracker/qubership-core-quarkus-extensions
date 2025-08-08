@@ -1,7 +1,7 @@
 package com.netcracker.cloud.disableapi.quarkus;
 
-import org.qubership.cloud.core.error.rest.tmf.TmfErrorResponse;
-import org.qubership.cloud.disableapi.quarkus.annotations.AbstractAnnotationsTest;
+import com.netcracker.cloud.core.error.rest.tmf.TmfErrorResponse;
+import com.netcracker.cloud.disableapi.quarkus.annotations.AbstractAnnotationsTest;
 import io.quarkus.runtime.StartupEvent;
 import jakarta.ws.rs.container.ContainerRequestContext;
 import jakarta.ws.rs.container.ResourceInfo;

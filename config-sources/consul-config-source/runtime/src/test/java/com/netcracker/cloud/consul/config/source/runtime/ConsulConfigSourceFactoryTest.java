@@ -5,11 +5,11 @@ import org.eclipse.microprofile.config.spi.ConfigSource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.AdditionalAnswers;
-import org.qubership.cloud.consul.provider.common.TokenStorage;
-import org.qubership.cloud.quarkus.consul.client.ConsulClient;
-import org.qubership.cloud.quarkus.consul.client.ConsulSourceConfig;
-import org.qubership.cloud.quarkus.consul.client.http.Response;
-import org.qubership.cloud.quarkus.consul.client.model.GetValue;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.quarkus.consul.client.ConsulClient;
+import com.netcracker.cloud.quarkus.consul.client.ConsulSourceConfig;
+import com.netcracker.cloud.quarkus.consul.client.http.Response;
+import com.netcracker.cloud.quarkus.consul.client.model.GetValue;
 
 import java.util.*;
 import java.util.stream.StreamSupport;
@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.qubership.cloud.consul.config.source.runtime.ConsulConfigSourceFactory.BASE_CONFIG_SOURCE_NAME;
+import static com.netcracker.cloud.consul.config.source.runtime.ConsulConfigSourceFactory.BASE_CONFIG_SOURCE_NAME;
 
 @QuarkusTest
 class ConsulConfigSourceFactoryTest {

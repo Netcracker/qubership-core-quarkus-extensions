@@ -1,8 +1,8 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.it;
 
 import com.datastax.oss.driver.api.core.CqlSession;
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
-import org.qubership.cloud.dbaas.common.postprocessor.QuarkusPostConnectProcessor;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
+import com.netcracker.cloud.dbaas.common.postprocessor.QuarkusPostConnectProcessor;
 import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped

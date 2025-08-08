@@ -4,14 +4,14 @@ import com.datastax.oss.driver.api.core.CqlSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.qubership.cloud.context.propagation.core.ContextManager;
-import org.qubership.cloud.dbaas.client.cassandra.entity.connection.CassandraDBConnection;
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.framework.contexts.tenant.DefaultTenantProvider;
-import org.qubership.cloud.framework.contexts.tenant.TenantContextObject;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.classifier.TenantClassifierBuilder;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.service.CassandraClientCreation;
+import com.netcracker.cloud.context.propagation.core.ContextManager;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.connection.CassandraDBConnection;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.framework.contexts.tenant.DefaultTenantProvider;
+import com.netcracker.cloud.framework.contexts.tenant.TenantContextObject;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.classifier.TenantClassifierBuilder;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.service.CassandraClientCreation;
 
 import java.util.*;
 
@@ -20,8 +20,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.qubership.cloud.framework.contexts.tenant.BaseTenantProvider.TENANT_CONTEXT_NAME;
-import static org.qubership.cloud.quarkus.dbaas.cassandraclient.CommonTestMethods.prepareCassandraDBConnection;
+import static com.netcracker.cloud.framework.contexts.tenant.BaseTenantProvider.TENANT_CONTEXT_NAME;
+import static com.netcracker.cloud.quarkus.dbaas.cassandraclient.CommonTestMethods.prepareCassandraDBConnection;
 
 class TenantCassandraClientTest {
 

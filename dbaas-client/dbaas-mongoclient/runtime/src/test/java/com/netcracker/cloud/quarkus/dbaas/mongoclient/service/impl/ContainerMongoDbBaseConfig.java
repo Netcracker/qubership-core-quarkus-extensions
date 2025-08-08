@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 import java.util.UUID;
 
-import static org.qubership.cloud.quarkus.dbaas.mongoclient.service.impl.MongoTestContainer.*;
+import static com.netcracker.cloud.quarkus.dbaas.mongoclient.service.impl.MongoTestContainer.*;
 
 public class ContainerMongoDbBaseConfig {
     private static MongoTestContainer container;

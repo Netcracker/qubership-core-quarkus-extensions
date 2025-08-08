@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.dbaas.mongoclient;
 
-import org.qubership.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
 
 public class CommonMongoTestPart {
 

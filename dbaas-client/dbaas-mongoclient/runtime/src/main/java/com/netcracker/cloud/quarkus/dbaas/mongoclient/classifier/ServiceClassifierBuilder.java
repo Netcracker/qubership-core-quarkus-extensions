@@ -1,12 +1,12 @@
 package com.netcracker.cloud.quarkus.dbaas.mongoclient.classifier;
 
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
 
 import java.util.Map;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
 
 public class ServiceClassifierBuilder implements DbaaSClassifierBuilder {
     private final Map<String, Object> primaryClassifier;

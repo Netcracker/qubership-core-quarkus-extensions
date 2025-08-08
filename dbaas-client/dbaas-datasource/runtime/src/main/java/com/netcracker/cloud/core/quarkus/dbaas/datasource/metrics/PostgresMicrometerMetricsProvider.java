@@ -1,10 +1,10 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.metrics;
 
-import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
-import org.qubership.cloud.dbaas.client.entity.database.type.PostgresDBType;
-import org.qubership.cloud.dbaas.client.exceptions.MetricsRegistrationException;
-import org.qubership.cloud.dbaas.client.metrics.DatabaseMetricProperties;
-import org.qubership.cloud.dbaas.client.metrics.MetricsProvider;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresDatabase;
+import com.netcracker.cloud.dbaas.client.entity.database.type.PostgresDBType;
+import com.netcracker.cloud.dbaas.client.exceptions.MetricsRegistrationException;
+import com.netcracker.cloud.dbaas.client.metrics.DatabaseMetricProperties;
+import com.netcracker.cloud.dbaas.client.metrics.MetricsProvider;
 import io.agroal.api.AgroalDataSource;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Metrics;

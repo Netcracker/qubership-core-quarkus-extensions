@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.logging.manager.deployment;
 
-import org.qubership.cloud.quarkus.logging.manager.runtime.LoggerManagerRecorder;
+import com.netcracker.cloud.quarkus.logging.manager.runtime.LoggerManagerRecorder;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.annotations.ExecutionTime;

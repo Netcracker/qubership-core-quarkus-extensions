@@ -1,11 +1,11 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.service.impl;
 
 import com.datastax.oss.driver.api.core.CqlSession;
-import org.qubership.cloud.dbaas.client.cassandra.entity.connection.CassandraDBConnection;
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
-import org.qubership.cloud.dbaas.client.cassandra.migration.MigrationExecutor;
-import org.qubership.cloud.dbaas.client.cassandra.service.CassandraSessionBuilder;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.service.CqlSessionCreator;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.connection.CassandraDBConnection;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
+import com.netcracker.cloud.dbaas.client.cassandra.migration.MigrationExecutor;
+import com.netcracker.cloud.dbaas.client.cassandra.service.CassandraSessionBuilder;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.service.CqlSessionCreator;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

@@ -1,12 +1,12 @@
 package com.netcracker.cloud.quarkus.dbaas.mongoclient.deployment;
 
-import org.qubership.cloud.quarkus.dbaas.mongoclient.AnnotationParsingBean;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.MongoClientAggregator;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.MongoClientRecorder;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.annotations.ServiceDb;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.annotations.TenantDb;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.config.CustomNCMongoClients;
-import org.qubership.cloud.quarkus.dbaas.mongoclient.config.MongoClientConfiguration;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.AnnotationParsingBean;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.MongoClientAggregator;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.MongoClientRecorder;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.annotations.ServiceDb;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.annotations.TenantDb;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.config.CustomNCMongoClients;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.config.MongoClientConfiguration;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.arc.deployment.SyntheticBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildProducer;

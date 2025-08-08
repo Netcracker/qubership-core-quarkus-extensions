@@ -1,7 +1,7 @@
 package com.netcracker.cloud.dbaas.common.postprocessor;
 
-import org.qubership.cloud.dbaas.client.entity.database.AbstractDatabase;
-import org.qubership.cloud.dbaas.client.management.PostConnectProcessor;
+import com.netcracker.cloud.dbaas.client.entity.database.AbstractDatabase;
+import com.netcracker.cloud.dbaas.client.management.PostConnectProcessor;
 
 import java.util.Comparator;
 

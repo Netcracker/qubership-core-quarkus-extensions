@@ -1,6 +1,6 @@
 package com.netcracker.cloud.dbaas.common.config;
 
-import org.qubership.cloud.dbaas.common.classifier.DbaaSClassifierFactory;
+import com.netcracker.cloud.dbaas.common.classifier.DbaaSClassifierFactory;
 import io.quarkus.arc.DefaultBean;
 import jakarta.enterprise.inject.Produces;
 import jakarta.inject.Singleton;

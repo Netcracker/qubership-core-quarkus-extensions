@@ -1,12 +1,12 @@
 package com.netcracker.cloud.dbaas.common.classifier;
 
-import org.qubership.cloud.dbaas.client.DbaasConst;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSChainClassifierBuilder;
+import com.netcracker.cloud.dbaas.client.DbaasConst;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSChainClassifierBuilder;
 
 import java.util.Map;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
 
 public class ServiceClassifierBuilder extends DbaaSChainClassifierBuilder {
 

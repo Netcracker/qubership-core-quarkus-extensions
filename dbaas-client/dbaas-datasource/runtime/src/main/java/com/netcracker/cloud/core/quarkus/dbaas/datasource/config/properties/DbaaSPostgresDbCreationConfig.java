@@ -1,6 +1,6 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.config.properties;
 
-import org.qubership.cloud.dbaas.common.config.DbaasApiPropertiesConfig;
+import com.netcracker.cloud.dbaas.common.config.DbaasApiPropertiesConfig;
 import io.quarkus.runtime.annotations.ConfigItem;
 import io.quarkus.runtime.annotations.ConfigPhase;
 import io.quarkus.runtime.annotations.ConfigRoot;

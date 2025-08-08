@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.logging.manager.runtime.consul;
 
-import org.qubership.cloud.consul.provider.common.TokenStorage;
-import org.qubership.cloud.quarkus.consul.client.ConsulClient;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.quarkus.consul.client.ConsulClient;
 import io.quarkus.runtime.RuntimeValue;
 import io.quarkus.runtime.annotations.Recorder;
 import jakarta.enterprise.inject.spi.CDI;

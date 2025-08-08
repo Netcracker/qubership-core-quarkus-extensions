@@ -18,19 +18,19 @@ import okhttp3.*;
 import okio.Buffer;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.qubership.cloud.dbaas.client.DbaaSClientOkHttpImpl;
-import org.qubership.cloud.dbaas.client.cassandra.entity.connection.CassandraDBConnection;
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.type.CassandraDBType;
-import org.qubership.cloud.dbaas.client.cassandra.service.CassandraLogicalDbProvider;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.DbaaSCassandraClient;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.CassandraDatabaseSettings;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.CassandraDbConfiguration;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.config.properties.CassandraProperties;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.service.CassandraClientCreation;
-import org.qubership.cloud.quarkus.dbaas.cassandraclient.service.CqlSessionCreator;
+import com.netcracker.cloud.dbaas.client.DbaaSClientOkHttpImpl;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.connection.CassandraDBConnection;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.type.CassandraDBType;
+import com.netcracker.cloud.dbaas.client.cassandra.service.CassandraLogicalDbProvider;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.DbaaSCassandraClient;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.CassandraDatabaseSettings;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.CassandraDbConfiguration;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.CassandraProperties;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.service.CassandraClientCreation;
+import com.netcracker.cloud.quarkus.dbaas.cassandraclient.service.CqlSessionCreator;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -42,8 +42,8 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
 
 @QuarkusTest
 @TestProfile(DbaaSCassandraDbCreationConfigTest.ExactDbPrefixAndRoleTestProfile.class)

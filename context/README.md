@@ -46,7 +46,7 @@ Framework provides contexts for propagating the following data:
 ```xml
 
 <dependency>
-    <groupId>org.qubership.cloud.quarkus</groupId>
+    <groupId>com.netcracker.cloud.quarkus</groupId>
     <artifactId>framework-contexts</artifactId>
     <version>${context.propagation.version}</version>
 </dependency>
@@ -316,7 +316,7 @@ All that you need is to add the below dependency.
 ```xml
 
 <dependency>
-    <groupId>org.qubership.cloud</groupId>
+    <groupId>com.netcracker.cloud</groupId>
     <artifactId>context-propagation-quarkus</artifactId>
     <version>${context.propagation.version}</version>
 </dependency>
@@ -332,7 +332,7 @@ And write own or use our `Quarkus framework contexts`.
 ```xml
 
 <dependency>
-    <groupId>org.qubership.cloud</groupId>
+    <groupId>com.netcracker.cloud</groupId>
     <artifactId>framework-contexts-quarkus</artifactId>
     <version>${context.propagation.version}</version>
 </dependency>

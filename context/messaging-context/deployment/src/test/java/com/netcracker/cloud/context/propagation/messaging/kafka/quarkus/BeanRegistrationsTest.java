@@ -1,6 +1,6 @@
 package com.netcracker.cloud.context.propagation.messaging.kafka.quarkus;
 
-import org.qubership.cloud.context.propagaton.messaging.kafka.quarkus.ContextAwareEmitterProducer;
+import com.netcracker.cloud.context.propagaton.messaging.kafka.quarkus.ContextAwareEmitterProducer;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.Test;

@@ -1,10 +1,10 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers;
 
-import org.qubership.cloud.framework.contexts.tenant.context.TenantContext;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.SkipOnDemand;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.Person;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.service.PersonServiceImpl;
+import com.netcracker.cloud.framework.contexts.tenant.context.TenantContext;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.PostgresqlContainerResource;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.SkipOnDemand;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.entity.Person;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.service.PersonServiceImpl;
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.QuarkusTestProfile;
@@ -19,7 +19,7 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.FIRST_TENANT_ID;
+import static com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration.TestUtils.FIRST_TENANT_ID;
 
 @SkipOnDemand
 @QuarkusTestResource(PostgresqlContainerResource.class)

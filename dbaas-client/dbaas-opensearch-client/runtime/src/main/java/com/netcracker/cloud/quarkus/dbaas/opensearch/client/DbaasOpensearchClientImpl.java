@@ -1,11 +1,11 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client;
 
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
-import org.qubership.cloud.dbaas.client.opensearch.AbstractDbaasOpensearchClient;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.service.OpensearchDbaaSApiClient;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
+import com.netcracker.cloud.dbaas.client.opensearch.AbstractDbaasOpensearchClient;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.service.OpensearchDbaaSApiClient;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 

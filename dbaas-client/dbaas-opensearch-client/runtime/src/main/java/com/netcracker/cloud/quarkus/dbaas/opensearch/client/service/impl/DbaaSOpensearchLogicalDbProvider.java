@@ -1,10 +1,10 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.service.impl;
 
-import org.qubership.cloud.dbaas.client.DbaasClient;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchDBType;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndex;
-import org.qubership.cloud.dbaas.client.opensearch.service.OpensearchLogicalDbProvider;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchDBType;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndex;
+import com.netcracker.cloud.dbaas.client.opensearch.service.OpensearchLogicalDbProvider;
 import jakarta.enterprise.context.ApplicationScoped;
 import org.apache.commons.lang3.NotImplementedException;
 import org.jetbrains.annotations.Nullable;

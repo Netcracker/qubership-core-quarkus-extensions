@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.routesregistration.deployment.resource;
 
 
-import org.qubership.cloud.routesregistration.common.annotation.Route;
+import com.netcracker.cloud.routesregistration.common.annotation.Route;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;

@@ -1,8 +1,8 @@
 package com.netcracker.cloud.quarkus.stomp.ws.runtime;
 
-import org.qubership.cloud.quarkus.stomp.ws.runtime.handlers.SubscribeHandler;
-import org.qubership.cloud.quarkus.stomp.ws.runtime.interceptors.SubscribeInterceptor;
-import org.qubership.cloud.quarkus.stomp.ws.runtime.sockjs.SockJsStompServer;
+import com.netcracker.cloud.quarkus.stomp.ws.runtime.handlers.SubscribeHandler;
+import com.netcracker.cloud.quarkus.stomp.ws.runtime.interceptors.SubscribeInterceptor;
+import com.netcracker.cloud.quarkus.stomp.ws.runtime.sockjs.SockJsStompServer;
 import io.quarkus.arc.Arc;
 import io.quarkus.arc.InstanceHandle;
 import io.quarkus.runtime.annotations.Recorder;

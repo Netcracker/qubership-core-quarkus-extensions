@@ -1,7 +1,7 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client;
 
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
-import org.qubership.cloud.dbaas.client.opensearch.service.OpensearchLogicalDbProvider;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
+import com.netcracker.cloud.dbaas.client.opensearch.service.OpensearchLogicalDbProvider;
 
 public class CommonTestMethods {
     public static OpensearchIndexConnection prepareOpensearchConnection() {

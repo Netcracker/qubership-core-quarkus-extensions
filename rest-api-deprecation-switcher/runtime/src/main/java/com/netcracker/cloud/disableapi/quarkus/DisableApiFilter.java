@@ -1,7 +1,7 @@
 package com.netcracker.cloud.disableapi.quarkus;
 
-import org.qubership.cloud.core.error.rest.tmf.TmfErrorResponse;
-import org.qubership.cloud.disableapi.UrlsPatternsParser;
+import com.netcracker.cloud.core.error.rest.tmf.TmfErrorResponse;
+import com.netcracker.cloud.disableapi.UrlsPatternsParser;
 import io.quarkus.runtime.StartupEvent;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.event.Observes;

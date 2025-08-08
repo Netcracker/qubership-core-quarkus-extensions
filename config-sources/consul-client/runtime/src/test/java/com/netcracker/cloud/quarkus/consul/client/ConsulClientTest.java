@@ -1,9 +1,9 @@
 package com.netcracker.cloud.quarkus.consul.client;
 
-import org.qubership.cloud.quarkus.consul.client.http.ConsulRawClient;
-import org.qubership.cloud.quarkus.consul.client.http.QueryParams;
-import org.qubership.cloud.quarkus.consul.client.http.Response;
-import org.qubership.cloud.quarkus.consul.client.model.GetValue;
+import com.netcracker.cloud.quarkus.consul.client.http.ConsulRawClient;
+import com.netcracker.cloud.quarkus.consul.client.http.QueryParams;
+import com.netcracker.cloud.quarkus.consul.client.http.Response;
+import com.netcracker.cloud.quarkus.consul.client.model.GetValue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

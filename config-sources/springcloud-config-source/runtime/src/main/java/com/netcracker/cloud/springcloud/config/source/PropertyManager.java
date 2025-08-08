@@ -79,9 +79,9 @@ public class PropertyManager {
                         rwl.readLock().lock();
                         final Config cfg = ConfigProvider.getConfig();
 
-                        Optional<Boolean> isStub = cfg.getOptionalValue("org.qubership.cloud.springcloud.config.source.stub", Boolean.class);
+                        Optional<Boolean> isStub = cfg.getOptionalValue("com.netcracker.cloud.springcloud.config.source.stub", Boolean.class);
                         if (!isStub.orElse(false)) {
-                            Optional<String> urlOptional = cfg.getOptionalValue("org.qubership.cloud.springcloud.config.source.ConfigServerClient/mp-rest/url", String.class);
+                            Optional<String> urlOptional = cfg.getOptionalValue("com.netcracker.cloud.springcloud.config.source.ConfigServerClient/mp-rest/url", String.class);
                             String url = urlOptional.orElse(DEFAULT_CONFIG_SERVER_URL);
                             LOGGER.debug("[{}]Going to create ConfigServer client with URL={}", sessionId, url);
                             try {

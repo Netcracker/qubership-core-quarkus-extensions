@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient;
 
-import org.qubership.cloud.dbaas.client.cassandra.entity.connection.CassandraDBConnection;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.connection.CassandraDBConnection;
 
 import java.util.List;
 

@@ -1,16 +1,16 @@
 package com.netcracker.cloud.quarkus.routesregistration.deployment;
 
-import org.qubership.cloud.quarkus.routesregistration.deployment.config.RequestRecorder;
-import org.qubership.cloud.quarkus.routesregistration.deployment.config.TestConfig;
-import org.qubership.cloud.quarkus.routesregistration.deployment.resource.hierarchy.*;
-import org.qubership.cloud.routesregistration.common.annotation.Route;
-import org.qubership.cloud.routesregistration.common.gateway.route.Constants;
-import org.qubership.cloud.routesregistration.common.gateway.route.rest.CommonRequest;
-import org.qubership.cloud.routesregistration.common.gateway.route.rest.CompositeRequest;
-import org.qubership.cloud.routesregistration.common.gateway.route.rest.RegistrationRequest;
-import org.qubership.cloud.routesregistration.common.gateway.route.v3.CompositeRequestV3;
-import org.qubership.cloud.routesregistration.common.gateway.route.v3.RegistrationRequestV3;
-import org.qubership.cloud.routesregistration.common.gateway.route.v3.domain.*;
+import com.netcracker.cloud.quarkus.routesregistration.deployment.config.RequestRecorder;
+import com.netcracker.cloud.quarkus.routesregistration.deployment.config.TestConfig;
+import com.netcracker.cloud.quarkus.routesregistration.deployment.resource.hierarchy.*;
+import com.netcracker.cloud.routesregistration.common.annotation.Route;
+import com.netcracker.cloud.routesregistration.common.gateway.route.Constants;
+import com.netcracker.cloud.routesregistration.common.gateway.route.rest.CommonRequest;
+import com.netcracker.cloud.routesregistration.common.gateway.route.rest.CompositeRequest;
+import com.netcracker.cloud.routesregistration.common.gateway.route.rest.RegistrationRequest;
+import com.netcracker.cloud.routesregistration.common.gateway.route.v3.CompositeRequestV3;
+import com.netcracker.cloud.routesregistration.common.gateway.route.v3.RegistrationRequestV3;
+import com.netcracker.cloud.routesregistration.common.gateway.route.v3.domain.*;
 import io.quarkus.test.QuarkusUnitTest;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;

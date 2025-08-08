@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;
 import lombok.NoArgsConstructor;
-import org.qubership.cloud.dbaas.client.entity.database.DatabaseSettings;
+import com.netcracker.cloud.dbaas.client.entity.database.DatabaseSettings;
 
 import java.util.Optional;
 

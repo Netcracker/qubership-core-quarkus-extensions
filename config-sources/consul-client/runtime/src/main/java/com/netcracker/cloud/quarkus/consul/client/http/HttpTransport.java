@@ -2,8 +2,8 @@ package com.netcracker.cloud.quarkus.consul.client.http;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.qubership.cloud.quarkus.consul.client.model.GetValue;
-import org.qubership.cloud.security.core.utils.tls.TlsUtils;
+import com.netcracker.cloud.quarkus.consul.client.model.GetValue;
+import com.netcracker.cloud.security.core.utils.tls.TlsUtils;
 
 import java.io.IOException;
 import java.net.URI;

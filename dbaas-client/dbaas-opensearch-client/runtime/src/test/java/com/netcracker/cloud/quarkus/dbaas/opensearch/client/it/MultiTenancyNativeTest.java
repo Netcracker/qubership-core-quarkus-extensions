@@ -14,12 +14,12 @@ import org.opensearch.client.opensearch.core.IndexResponse;
 import org.opensearch.client.opensearch.indices.CreateIndexRequest;
 import org.opensearch.client.opensearch.indices.ExistsRequest;
 import org.opensearch.client.transport.endpoints.BooleanResponse;
-import org.qubership.cloud.context.propagation.core.ContextManager;
-import org.qubership.cloud.dbaas.client.opensearch.DbaasOpensearchClient;
-import org.qubership.cloud.framework.contexts.tenant.DefaultTenantProvider;
-import org.qubership.cloud.framework.contexts.tenant.context.TenantContext;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.DbaasOpensearchConfiguration;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.it.configuration.ContainerLogicalDbProvider;
+import com.netcracker.cloud.context.propagation.core.ContextManager;
+import com.netcracker.cloud.dbaas.client.opensearch.DbaasOpensearchClient;
+import com.netcracker.cloud.framework.contexts.tenant.DefaultTenantProvider;
+import com.netcracker.cloud.framework.contexts.tenant.context.TenantContext;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.DbaasOpensearchConfiguration;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.it.configuration.ContainerLogicalDbProvider;
 
 import java.io.IOException;
 import java.util.Collections;

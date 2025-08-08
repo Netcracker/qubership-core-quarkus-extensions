@@ -1,11 +1,11 @@
 package com.netcracker.cloud.quarkus.logging.manager.runtime.consul;
 
 import org.junit.jupiter.api.Assertions;
-import org.qubership.cloud.quarkus.consul.client.ConsulClient;
-import org.qubership.cloud.quarkus.consul.client.ConsulSourceConfig;
-import org.qubership.cloud.quarkus.consul.client.model.GetValue;
-import org.qubership.cloud.quarkus.consul.client.http.Response;
-import org.qubership.cloud.quarkus.consul.client.http.QueryParams;
+import com.netcracker.cloud.quarkus.consul.client.ConsulClient;
+import com.netcracker.cloud.quarkus.consul.client.ConsulSourceConfig;
+import com.netcracker.cloud.quarkus.consul.client.model.GetValue;
+import com.netcracker.cloud.quarkus.consul.client.http.Response;
+import com.netcracker.cloud.quarkus.consul.client.http.QueryParams;
 import io.quarkus.runtime.StartupEvent;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

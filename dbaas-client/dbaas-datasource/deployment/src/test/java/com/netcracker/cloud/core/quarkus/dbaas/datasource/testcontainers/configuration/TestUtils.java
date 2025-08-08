@@ -1,9 +1,9 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration;
 
-import org.qubership.cloud.framework.contexts.tenant.context.TenantContext;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.classifier.MicroserviceClassifierBuilder;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.classifier.TenantClassifierBuilder;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.testcontainers.service.PersonService;
+import com.netcracker.cloud.framework.contexts.tenant.context.TenantContext;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.classifier.MicroserviceClassifierBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.classifier.TenantClassifierBuilder;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.service.PersonService;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.HashMap;

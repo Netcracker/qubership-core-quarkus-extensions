@@ -1,6 +1,6 @@
 package com.netcracker.cloud.dbaas.common.config;
 
-import org.qubership.cloud.dbaas.client.entity.DbaasApiProperties;
+import com.netcracker.cloud.dbaas.client.entity.DbaasApiProperties;
 import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;
 import lombok.Getter;

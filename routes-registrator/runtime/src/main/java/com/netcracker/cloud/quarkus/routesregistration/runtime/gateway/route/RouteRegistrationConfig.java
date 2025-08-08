@@ -1,10 +1,10 @@
 package com.netcracker.cloud.quarkus.routesregistration.runtime.gateway.route;
 
-import org.qubership.cloud.quarkus.security.auth.M2MManager;
-import org.qubership.cloud.routesregistration.common.gateway.route.*;
-import org.qubership.cloud.routesregistration.common.gateway.route.rest.RegistrationRequestFactory;
-import org.qubership.cloud.routesregistration.common.gateway.route.transformation.RouteTransformer;
-import org.qubership.cloud.security.core.auth.Token;
+import com.netcracker.cloud.quarkus.security.auth.M2MManager;
+import com.netcracker.cloud.routesregistration.common.gateway.route.*;
+import com.netcracker.cloud.routesregistration.common.gateway.route.rest.RegistrationRequestFactory;
+import com.netcracker.cloud.routesregistration.common.gateway.route.transformation.RouteTransformer;
+import com.netcracker.cloud.security.core.auth.Token;
 import io.quarkus.arc.Unremovable;
 import io.reactivex.Scheduler;
 import io.reactivex.schedulers.Schedulers;

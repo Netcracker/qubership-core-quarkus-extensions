@@ -1,9 +1,9 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.it;
 
-import org.qubership.cloud.framework.contexts.tenant.context.TenantContext;
-import org.qubership.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
-import org.qubership.cloud.dbaas.client.cassandra.service.CassandraLogicalDbProvider;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.framework.contexts.tenant.context.TenantContext;
+import com.netcracker.cloud.dbaas.client.cassandra.entity.database.CassandraDatabase;
+import com.netcracker.cloud.dbaas.client.cassandra.service.CassandraLogicalDbProvider;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
 import jakarta.annotation.Priority;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Alternative;
@@ -13,9 +13,9 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.SortedMap;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.TENANT_ID;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.TENANT_ID;
 
 @Alternative
 @Priority(1)

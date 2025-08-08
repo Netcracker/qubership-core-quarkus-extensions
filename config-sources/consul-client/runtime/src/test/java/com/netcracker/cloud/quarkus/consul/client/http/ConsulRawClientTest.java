@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.consul.client.http;
 
-import org.qubership.cloud.quarkus.consul.client.model.GetValue;
+import com.netcracker.cloud.quarkus.consul.client.model.GetValue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

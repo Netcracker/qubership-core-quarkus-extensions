@@ -1,6 +1,6 @@
 package com.netcracker.cloud.quarkus.dbaas.cassandraclient.config.properties.migration;
 
-import org.qubership.cloud.dbaas.client.cassandra.migration.model.settings.LockSettings;
+import com.netcracker.cloud.dbaas.client.cassandra.migration.model.settings.LockSettings;
 import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;
 import lombok.Getter;

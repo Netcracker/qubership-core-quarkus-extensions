@@ -1,14 +1,14 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource;
 
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
-import org.qubership.cloud.dbaas.common.classifier.ServiceClassifierBuilder;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSClassifierBuilder;
+import com.netcracker.cloud.dbaas.common.classifier.ServiceClassifierBuilder;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.SERVICE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SERVICE;
 
 public class CommonTestUtils {
 

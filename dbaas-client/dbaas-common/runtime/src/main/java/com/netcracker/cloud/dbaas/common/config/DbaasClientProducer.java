@@ -4,7 +4,7 @@ import io.quarkus.arc.DefaultBean;
 import jakarta.enterprise.inject.Produces;
 import jakarta.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;
-import org.qubership.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
 
 @Slf4j
 @Singleton

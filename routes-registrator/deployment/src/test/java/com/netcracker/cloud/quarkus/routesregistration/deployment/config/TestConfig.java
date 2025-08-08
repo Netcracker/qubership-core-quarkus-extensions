@@ -1,9 +1,9 @@
 package com.netcracker.cloud.quarkus.routesregistration.deployment.config;
 
-import org.qubership.cloud.quarkus.routesregistration.runtime.gateway.route.QuarkusControlPlaneClient;
-import org.qubership.cloud.routesregistration.common.gateway.route.*;
-import org.qubership.cloud.routesregistration.common.gateway.route.rest.RegistrationRequestFactory;
-import org.qubership.cloud.routesregistration.common.gateway.route.transformation.RouteTransformer;
+import com.netcracker.cloud.quarkus.routesregistration.runtime.gateway.route.QuarkusControlPlaneClient;
+import com.netcracker.cloud.routesregistration.common.gateway.route.*;
+import com.netcracker.cloud.routesregistration.common.gateway.route.rest.RegistrationRequestFactory;
+import com.netcracker.cloud.routesregistration.common.gateway.route.transformation.RouteTransformer;
 import io.quarkus.arc.Unremovable;
 import io.reactivex.Scheduler;
 import io.reactivex.schedulers.Schedulers;
@@ -18,7 +18,7 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 import java.util.List;
 import java.util.Map;
 
-import static org.qubership.cloud.quarkus.routesregistration.runtime.gateway.route.RouteRegistrationConfig.CONTROL_PLANE_HTTP_CLIENT;
+import static com.netcracker.cloud.quarkus.routesregistration.runtime.gateway.route.RouteRegistrationConfig.CONTROL_PLANE_HTTP_CLIENT;
 
 @ApplicationScoped
 public class TestConfig {

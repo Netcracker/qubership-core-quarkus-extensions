@@ -1,10 +1,10 @@
 package com.netcracker.cloud.dbaas.datasource.deployment;
 
-import org.qubership.cloud.core.quarkus.dbaas.datasource.DataSourceAggregator;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.CoreQuarkusDataSourceProducer;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.config.DataSourceConfiguration;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.metrics.PostgresMicrometerMetricsProvider;
-import org.qubership.cloud.core.quarkus.dbaas.datasource.service.impl.MigrationServiceImpl;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.DataSourceAggregator;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.CoreQuarkusDataSourceProducer;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.config.DataSourceConfiguration;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.metrics.PostgresMicrometerMetricsProvider;
+import com.netcracker.cloud.core.quarkus.dbaas.datasource.service.impl.MigrationServiceImpl;
 import io.quarkus.agroal.spi.JdbcDataSourceBuildItem;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.arc.processor.DotNames;

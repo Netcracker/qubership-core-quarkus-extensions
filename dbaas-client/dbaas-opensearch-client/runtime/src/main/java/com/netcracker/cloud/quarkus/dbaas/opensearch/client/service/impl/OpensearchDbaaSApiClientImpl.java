@@ -1,22 +1,22 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.service.impl;
 
-import org.qubership.cloud.dbaas.client.DbaasClient;
-import org.qubership.cloud.dbaas.client.entity.connection.DatabaseConnection;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.metrics.DatabaseMetricProperties;
-import org.qubership.cloud.dbaas.client.metrics.DbaaSMetricsRegistrar;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchDBType;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchDatabaseSettings;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndex;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
-import org.qubership.cloud.dbaas.client.opensearch.metrics.OpensearchClientRequestsSecondsObservationHandler;
-import org.qubership.cloud.dbaas.client.opensearch.metrics.OpensearchMetricsProvider;
-import org.qubership.cloud.dbaas.client.opensearch.service.OpensearchLogicalDbProvider;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.config.DbaaSOpensearchConfigurationProperty;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.config.DbaaSOpensearchCreationConfig;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.config.OpensearchConfiguration;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.service.OpensearchDbaaSApiClient;
+import com.netcracker.cloud.dbaas.client.DbaasClient;
+import com.netcracker.cloud.dbaas.client.entity.connection.DatabaseConnection;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.metrics.DatabaseMetricProperties;
+import com.netcracker.cloud.dbaas.client.metrics.DbaaSMetricsRegistrar;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchDBType;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchDatabaseSettings;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndex;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
+import com.netcracker.cloud.dbaas.client.opensearch.metrics.OpensearchClientRequestsSecondsObservationHandler;
+import com.netcracker.cloud.dbaas.client.opensearch.metrics.OpensearchMetricsProvider;
+import com.netcracker.cloud.dbaas.client.opensearch.service.OpensearchLogicalDbProvider;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.config.DbaaSOpensearchConfigurationProperty;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.config.DbaaSOpensearchCreationConfig;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.config.OpensearchConfiguration;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.service.OpensearchDbaaSApiClient;
 import jakarta.enterprise.inject.Instance;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.hc.client5.http.auth.AuthScope;
@@ -34,7 +34,7 @@ import org.jetbrains.annotations.NotNull;
 import org.opensearch.client.opensearch.OpenSearchClient;
 import org.opensearch.client.transport.OpenSearchTransport;
 import org.opensearch.client.transport.httpclient5.ApacheHttpClient5TransportBuilder;
-import org.qubership.cloud.security.core.utils.tls.TlsUtils;
+import com.netcracker.cloud.security.core.utils.tls.TlsUtils;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -47,9 +47,9 @@ import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
-import static org.qubership.cloud.dbaas.client.DbaasConst.TENANT;
-import static org.qubership.cloud.dbaas.client.DbaasConst.TENANT_ID;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.TENANT;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.TENANT_ID;
 
 @Slf4j
 public class OpensearchDbaaSApiClientImpl implements OpensearchDbaaSApiClient {

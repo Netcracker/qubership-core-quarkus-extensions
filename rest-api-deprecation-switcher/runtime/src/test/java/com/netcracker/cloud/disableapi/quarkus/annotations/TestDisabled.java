@@ -1,6 +1,6 @@
 package com.netcracker.cloud.disableapi.quarkus.annotations;
 
-import org.qubership.cloud.disableapi.quarkus.annotations.profiles.DisabledProfile;
+import com.netcracker.cloud.disableapi.quarkus.annotations.profiles.DisabledProfile;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.TestProfile;
 import io.restassured.http.Method;

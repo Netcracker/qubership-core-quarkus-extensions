@@ -1,7 +1,7 @@
 package com.netcracker.cloud.disableapi.quarkus;
 
-import org.qubership.cloud.core.error.rest.tmf.TmfErrorResponse;
-import org.qubership.cloud.disableapi.DeprecatedApiException;
+import com.netcracker.cloud.core.error.rest.tmf.TmfErrorResponse;
+import com.netcracker.cloud.disableapi.DeprecatedApiException;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import lombok.extern.slf4j.Slf4j;
 

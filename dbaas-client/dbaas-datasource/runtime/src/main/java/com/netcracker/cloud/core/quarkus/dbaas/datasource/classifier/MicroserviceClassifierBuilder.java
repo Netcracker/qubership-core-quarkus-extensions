@@ -1,12 +1,12 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.classifier;
 
-import org.qubership.cloud.dbaas.client.DbaasConst;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.management.classifier.DbaaSChainClassifierBuilder;
+import com.netcracker.cloud.dbaas.client.DbaasConst;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.management.classifier.DbaaSChainClassifierBuilder;
 
 import java.util.Map;
 
-import static org.qubership.cloud.dbaas.client.DbaasConst.SCOPE;
+import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
 
 @Deprecated(forRemoval = true)
 public class MicroserviceClassifierBuilder extends DbaaSChainClassifierBuilder {

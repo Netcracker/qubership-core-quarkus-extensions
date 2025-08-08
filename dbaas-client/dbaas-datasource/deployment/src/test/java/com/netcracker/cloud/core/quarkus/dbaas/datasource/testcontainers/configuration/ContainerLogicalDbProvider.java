@@ -1,10 +1,10 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.testcontainers.configuration;
 
-import org.qubership.cloud.dbaas.client.entity.connection.PostgresDBConnection;
-import org.qubership.cloud.dbaas.client.entity.database.PostgresDatabase;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.service.PostgresqlLogicalDbProvider;
+import com.netcracker.cloud.dbaas.client.entity.connection.PostgresDBConnection;
+import com.netcracker.cloud.dbaas.client.entity.database.PostgresDatabase;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.service.PostgresqlLogicalDbProvider;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;

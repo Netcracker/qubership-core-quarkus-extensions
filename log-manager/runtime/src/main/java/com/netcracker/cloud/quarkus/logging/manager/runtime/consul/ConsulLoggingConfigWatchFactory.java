@@ -1,14 +1,14 @@
 package com.netcracker.cloud.quarkus.logging.manager.runtime.consul;
 
-import org.qubership.cloud.consul.provider.common.TokenStorage;
-import org.qubership.cloud.quarkus.consul.client.ConsulClient;
-import org.qubership.cloud.quarkus.consul.client.ConsulSourceConfig;
-import org.qubership.cloud.quarkus.consul.client.RetryableConsulClient;
-import org.qubership.cloud.quarkus.consul.client.model.GetValue;
-import org.qubership.cloud.quarkus.consul.client.http.QueryParams;
-import org.qubership.cloud.quarkus.consul.client.http.Response;
-import org.qubership.cloud.quarkus.logging.manager.runtime.updater.event.ConfigUpdatedEvent;
-import org.qubership.cloud.quarkus.logging.manager.runtime.updater.event.LogUpdateEvent;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.quarkus.consul.client.ConsulClient;
+import com.netcracker.cloud.quarkus.consul.client.ConsulSourceConfig;
+import com.netcracker.cloud.quarkus.consul.client.RetryableConsulClient;
+import com.netcracker.cloud.quarkus.consul.client.model.GetValue;
+import com.netcracker.cloud.quarkus.consul.client.http.QueryParams;
+import com.netcracker.cloud.quarkus.consul.client.http.Response;
+import com.netcracker.cloud.quarkus.logging.manager.runtime.updater.event.ConfigUpdatedEvent;
+import com.netcracker.cloud.quarkus.logging.manager.runtime.updater.event.LogUpdateEvent;
 import io.quarkus.arc.Arc;
 import io.quarkus.runtime.StartupEvent;
 import jakarta.enterprise.event.Event;

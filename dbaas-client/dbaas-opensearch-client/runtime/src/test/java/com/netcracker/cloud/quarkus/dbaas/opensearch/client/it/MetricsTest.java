@@ -1,16 +1,16 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.it;
 
-import org.qubership.cloud.dbaas.client.metrics.DatabaseMetricProperties;
-import org.qubership.cloud.dbaas.client.metrics.MetricsProvider;
-import org.qubership.cloud.dbaas.client.opensearch.DbaasOpensearchClient;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndex;
-import org.qubership.cloud.dbaas.client.opensearch.entity.metrics.OpensearchClientRequestsSecondsMetricType;
-import org.qubership.cloud.dbaas.client.opensearch.metrics.OpensearchClientRequestsSecondsObservationHandler;
-import org.qubership.cloud.dbaas.client.opensearch.metrics.OpensearchMetricsProvider;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.DbaasOpensearchConfiguration;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.config.DbaaSOpensearchConfigurationProperty;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.it.configuration.ContainerLogicalDbProvider;
-import org.qubership.cloud.quarkus.dbaas.opensearch.client.it.configuration.OpensearchContainerResource;
+import com.netcracker.cloud.dbaas.client.metrics.DatabaseMetricProperties;
+import com.netcracker.cloud.dbaas.client.metrics.MetricsProvider;
+import com.netcracker.cloud.dbaas.client.opensearch.DbaasOpensearchClient;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndex;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.metrics.OpensearchClientRequestsSecondsMetricType;
+import com.netcracker.cloud.dbaas.client.opensearch.metrics.OpensearchClientRequestsSecondsObservationHandler;
+import com.netcracker.cloud.dbaas.client.opensearch.metrics.OpensearchMetricsProvider;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.DbaasOpensearchConfiguration;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.config.DbaaSOpensearchConfigurationProperty;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.it.configuration.ContainerLogicalDbProvider;
+import com.netcracker.cloud.quarkus.dbaas.opensearch.client.it.configuration.OpensearchContainerResource;
 import io.micrometer.core.instrument.Meter;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Tag;

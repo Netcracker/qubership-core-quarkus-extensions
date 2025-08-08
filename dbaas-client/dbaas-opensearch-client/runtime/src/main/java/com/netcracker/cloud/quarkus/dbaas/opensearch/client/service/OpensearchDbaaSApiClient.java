@@ -1,9 +1,9 @@
 package com.netcracker.cloud.quarkus.dbaas.opensearch.client.service;
 
-import org.qubership.cloud.dbaas.client.entity.connection.DatabaseConnection;
-import org.qubership.cloud.dbaas.client.management.DatabaseConfig;
-import org.qubership.cloud.dbaas.client.management.DbaasDbClassifier;
-import org.qubership.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
+import com.netcracker.cloud.dbaas.client.entity.connection.DatabaseConnection;
+import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
+import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
+import com.netcracker.cloud.dbaas.client.opensearch.entity.OpensearchIndexConnection;
 
 public interface OpensearchDbaaSApiClient {
     DatabaseConnection getOpensearchIndex(DbaasDbClassifier classifier);

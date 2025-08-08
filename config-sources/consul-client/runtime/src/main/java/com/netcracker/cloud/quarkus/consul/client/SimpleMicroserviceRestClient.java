@@ -1,8 +1,8 @@
 package com.netcracker.cloud.quarkus.consul.client;
 
-import org.qubership.cloud.restclient.HttpMethod;
-import org.qubership.cloud.restclient.MicroserviceRestClient;
-import org.qubership.cloud.restclient.entity.RestClientResponseEntity;
+import com.netcracker.cloud.restclient.HttpMethod;
+import com.netcracker.cloud.restclient.MicroserviceRestClient;
+import com.netcracker.cloud.restclient.entity.RestClientResponseEntity;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.Entity;
 import jakarta.ws.rs.client.Invocation;
