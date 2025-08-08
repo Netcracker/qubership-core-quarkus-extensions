@@ -14,7 +14,7 @@
         <dependency>
             <groupId>com.netcracker.cloud</groupId>
             <artifactId>rest-api-deprecation-switcher-common</artifactId>
-            <version>6.1.2-SNAPSHOT<!--This version was coming from a property 'rest-libraries.version' — please replace the property value manually--></version>
+            <version>${rest-libraries.version}</version>
         </dependency>
         <dependency>
             <groupId>com.netcracker.cloud</groupId>

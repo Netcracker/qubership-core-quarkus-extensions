@@ -31,7 +31,7 @@
     <dependency>
       <groupId>com.netcracker.cloud</groupId>
       <artifactId>route-registration-common</artifactId>
-      <version>6.1.2-SNAPSHOT<!--This version was coming from a property 'rest-libraries.version' — please replace the property value manually--></version>
+      <version>${rest-libraries.version}</version>
       <exclusions>
         <exclusion>
           <artifactId>javax.annotation-api</artifactId>

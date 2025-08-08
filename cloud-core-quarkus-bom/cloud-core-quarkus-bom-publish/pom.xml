@@ -16,7 +16,7 @@
             <dependency>
                 <groupId>com.netcracker.cloud.quarkus</groupId>
                 <artifactId>cloud-core-context-propagation-bom</artifactId>
-                <version>6.1.2-SNAPSHOT<!--This version was coming from a property 'nc.context-quarkus.version' — please replace the property value manually--></version>
+                <version>${nc.context-quarkus.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
