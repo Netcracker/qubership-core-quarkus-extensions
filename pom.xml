@@ -25,13 +25,13 @@
         <module>build-parent</module>
         <module>stomp-ws-server</module>
         <module>security</module>
+        <module>log-manager</module>
         <module>config-sources</module>
         <module>dbaas-client</module>
         <module>cloud-core-quarkus-bom</module>
         <module>routes-registrator</module>
         <module>maas-client</module>
         <module>rest-api-deprecation-switcher</module>
-        <module>log-manager</module>
         <module>report-aggregate</module>
     </modules>
 
