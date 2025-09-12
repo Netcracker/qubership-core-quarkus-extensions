@@ -30,7 +30,7 @@
         <okio.version>3.16.0</okio.version>
 
         <!--Test-->
-        <mockito.version>5.14.2</mockito.version>
+        <mockito.version>5.17.0</mockito.version>
     </properties>
 
     <dependencyManagement>
