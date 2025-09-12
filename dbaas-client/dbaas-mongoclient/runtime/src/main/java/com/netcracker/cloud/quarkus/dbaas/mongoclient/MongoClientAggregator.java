@@ -66,7 +66,7 @@ public class MongoClientAggregator implements MongoClient {
 
     @Override
     public Long getTimeout(TimeUnit timeUnit) {
-        return isServiceDb() ? serviceMongoClient.getTimeout(timeUnit) : tenantMongoClient.getTimeout(timeUnit) ;
+        return isServiceDb() ? serviceMongoClient.getTimeout(timeUnit) : tenantMongoClient.getTimeout(timeUnit);
     }
 
     @Override
@@ -199,22 +199,22 @@ public class MongoClientAggregator implements MongoClient {
 
     @Override
     public ClientBulkWriteResult bulkWrite(List<? extends ClientNamespacedWriteModel> list) throws ClientBulkWriteException {
-        return null;
+        return isServiceDb() ? serviceMongoClient.bulkWrite(list) : tenantMongoClient.bulkWrite(list);
     }
 
     @Override
     public ClientBulkWriteResult bulkWrite(List<? extends ClientNamespacedWriteModel> list, ClientBulkWriteOptions clientBulkWriteOptions) throws ClientBulkWriteException {
-        return null;
+        return isServiceDb() ? serviceMongoClient.bulkWrite(list, clientBulkWriteOptions) : tenantMongoClient.bulkWrite(list, clientBulkWriteOptions);
     }
 
     @Override
     public ClientBulkWriteResult bulkWrite(ClientSession clientSession, List<? extends ClientNamespacedWriteModel> list) throws ClientBulkWriteException {
-        return null;
+        return isServiceDb() ? serviceMongoClient.bulkWrite(clientSession, list) : tenantMongoClient.bulkWrite(clientSession, list);
     }
 
     @Override
     public ClientBulkWriteResult bulkWrite(ClientSession clientSession, List<? extends ClientNamespacedWriteModel> list, ClientBulkWriteOptions clientBulkWriteOptions) throws ClientBulkWriteException {
-        return null;
+        return isServiceDb() ? serviceMongoClient.bulkWrite(clientSession, list, clientBulkWriteOptions) : tenantMongoClient.bulkWrite(clientSession, list, clientBulkWriteOptions);
     }
 
     @Override
