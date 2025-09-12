@@ -179,32 +179,32 @@ public class DbaaSMongoClient implements MongoClient {
     }
 
     @Override
-    public Long getTimeout(TimeUnit var1) {
-        return getMongoClient().getTimeout(var1);
+    public Long getTimeout(TimeUnit timeUnit) {
+        return getMongoClient().getTimeout(timeUnit);
     }
 
     @Override
-    public MongoCluster withCodecRegistry(CodecRegistry var1) {
-        return getMongoClient().withCodecRegistry(var1);
+    public MongoCluster withCodecRegistry(CodecRegistry codecRegistry) {
+        return getMongoClient().withCodecRegistry(codecRegistry);
     }
 
     @Override
-    public MongoCluster withReadPreference(ReadPreference var1) {
-        return getMongoClient().withReadPreference(var1);
+    public MongoCluster withReadPreference(ReadPreference readPreference) {
+        return getMongoClient().withReadPreference(readPreference);
     }
 
     @Override
-    public MongoCluster withWriteConcern(WriteConcern var1) {
-        return getMongoClient().withWriteConcern(var1);
+    public MongoCluster withWriteConcern(WriteConcern writeConcern) {
+        return getMongoClient().withWriteConcern(writeConcern);
     }
 
     @Override
-    public MongoCluster withReadConcern(ReadConcern var1) {
-        return getMongoClient().withReadConcern(var1);
+    public MongoCluster withReadConcern(ReadConcern readConcern) {
+        return getMongoClient().withReadConcern(readConcern);
     }
 
     @Override
-    public MongoCluster withTimeout(long var1, TimeUnit var3) {
-        return getMongoClient().withTimeout(var1, var3);
+    public MongoCluster withTimeout(long timeout, TimeUnit timeUnit) {
+        return getMongoClient().withTimeout(timeout, timeUnit);
     }
 }
