@@ -30,7 +30,7 @@
         <okio.version>3.16.3</okio.version>
 
         <!--Test-->
-        <mockito.version>5.17.0</mockito.version>
+        <mockito.version>5.18.0</mockito.version>
     </properties>
 
     <dependencyManagement>
@@ -157,7 +157,7 @@
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>33.4.0-jre</version>
+                <version>33.4.8-jre</version>
             </dependency>
             <!--Test-->
             <dependency>
