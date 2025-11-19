@@ -1,85 +1,88 @@
 package com.netcracker.cloud.core.quarkus.dbaas.datasource.config.properties;
 
-import io.quarkus.runtime.annotations.ConfigGroup;
-import io.quarkus.runtime.annotations.ConfigItem;
 import io.quarkus.runtime.annotations.ConfigPhase;
 import io.quarkus.runtime.annotations.ConfigRoot;
 import io.smallrye.config.ConfigMapping;
+import io.smallrye.config.WithDefault;
+import io.smallrye.config.WithName;
+import io.smallrye.config.WithParentName;
 
-import java.util.HashMap;
 import java.util.Map;
 
-@ConfigRoot(name = "dbaas", phase = ConfigPhase.RUN_TIME)
-public class DatasourceProperties {
+@ConfigMapping(prefix = "quarkus.dbaas")
+@ConfigRoot(phase = ConfigPhase.RUN_TIME)
+public interface DatasourceProperties {
 
     /**
-     * jdbc config
+     * JDBC config (dbaas.datasource.jdbc).
      */
-    @ConfigItem(name = "datasource.jdbc")
-    public JDBCConfig jdbc;
+    @WithName("datasource.jdbc")
+    JDBCConfig jdbc();
 
     /**
-     * enhanced-leak-report
+     * Enables enhanced leak report (dbaas.datasource.enhanced-leak-report.enable).
      */
-    @ConfigItem(name = "datasource.enhanced-leak-report.enable", defaultValue = "false")
-    public Boolean enhancedLeakReport;
+    @WithName("datasource.enhanced-leak-report.enable")
+    @WithDefault("false")
+    boolean enhancedLeakReport();
 
     /**
-     * debug-listener
+     * Enables debug datasource listeners (dbaas.datasource.debug-listener.enable).
      */
-    @ConfigItem(name = "datasource.debug-listener.enable", defaultValue = "false")
-    public Boolean debugDatasourceListeners;
+    @WithName("datasource.debug-listener.enable")
+    @WithDefault("false")
+    boolean debugDatasourceListeners();
 
     /**
-     * globalJdbcProperties
+     * Global JDBC properties (dbaas.datasource.jdbc-properties.*).
      */
-    @ConfigItem(name = "datasource.jdbc-properties")
-    public Map<String, String> globalJdbcProperties = new HashMap<>();
+    @WithName("datasource.jdbc-properties")
+    Map<String, String> globalJdbcProperties();
 
     /**
-     * global xaProperties
+     * Global XA properties (dbaas.datasource.xa-properties.*).
      */
-    @ConfigItem(name = "datasource.xa-properties")
-    public Map<String, String> globalXaProperties = new HashMap<>();
+    @WithName("datasource.xa-properties")
+    Map<String, String> globalXaProperties();
 
     /**
-     * global XA configuration
+     * Global XA flag (dbaas.datasource.xa).
      */
-    @ConfigItem(name = "datasource.xa", defaultValue = "false")
-    public Boolean xa;
+    @WithName("datasource.xa")
+    @WithDefault("false")
+    boolean xa();
 
     /**
-     * jdbc
+     * Per-datasource config (dbaas.&lt;datasource-name&gt;.*).
      */
-    @ConfigMapping
-    public Map<String, JDBCProperties> datasources = new HashMap<>();
+    @WithParentName
+    Map<String, JDBCProperties> datasources();
 
-    @ConfigGroup
-    public static class JDBCProperties {
+    interface JDBCProperties {
 
         /**
-         * jdbc config
+         * JDBC config for this datasource (dbaas.&lt;name&gt;.jdbc).
          */
-        @ConfigItem(name = "jdbc")
-        public JDBCConfig jdbc;
+        @WithName("jdbc")
+        JDBCConfig jdbc();
 
         /**
-         * jdbcProperties
+         * JDBC properties for this datasource (dbaas.&lt;name&gt;.jdbc-properties.*).
          */
-        @ConfigItem(name = "jdbc-properties")
-        public Map<String, String> jdbcProperties = new HashMap<>();
+        @WithName("jdbc-properties")
+        Map<String, String> jdbcProperties();
 
         /**
-         * xaProperties
+         * XA properties for this datasource (dbaas.&lt;name&gt;.xa-properties.*).
          */
-        @ConfigItem(name = "xa-properties")
-        public Map<String, String> xaProperties = new HashMap<>();
+        @WithName("xa-properties")
+        Map<String, String> xaProperties();
 
         /**
-         * is XA datasource
+         * XA flag for this datasource (dbaas.&lt;name&gt;.xa).
          */
-        @ConfigItem(name = "xa", defaultValue = "false")
-        public Boolean xa;
+        @WithName("xa")
+        @WithDefault("false")
+        boolean xa();
     }
-
 }
