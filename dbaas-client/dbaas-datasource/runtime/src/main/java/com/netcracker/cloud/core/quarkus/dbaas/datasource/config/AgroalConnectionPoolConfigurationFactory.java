@@ -77,6 +77,6 @@ public class AgroalConnectionPoolConfigurationFactory {
                 .withMapping(JDBCConfig.class, "jdbc")
                 .build();
 
-        return config.getConfigMapping(JDBCConfig.class);
+        return config.getConfigMapping(JDBCConfig.class, "jdbc");
     }
 }
