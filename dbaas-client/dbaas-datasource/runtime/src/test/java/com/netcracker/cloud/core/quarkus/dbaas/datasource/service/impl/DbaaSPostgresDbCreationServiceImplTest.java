@@ -394,6 +394,8 @@ public class DbaaSPostgresDbCreationServiceImplTest {
         when(postgresDbConfiguration.serviceDatabaseSettings()).thenReturn(Optional.of(settings));
         dataSourceCreationServiceImplBuilder.setPostgresDbConfiguration(postgresDbConfiguration);
 
+        when(postgresDbConfiguration.getPostgresDbConfiguration(any())).thenCallRealMethod();
+
         DbaaSPostgresDbCreationServiceImpl dbaaSPostgresDbCreationService = dataSourceCreationServiceImplBuilder.build();
         DbaasDbClassifier classifier = getServiceClassifier();
 
@@ -418,6 +420,8 @@ public class DbaaSPostgresDbCreationServiceImplTest {
         when(tenantDbConfiguration.allTenantsPhysicalDatabaseId()).thenReturn(Optional.of("123"));
         when(tenantDbConfiguration.allTenantsDatabaseSettings()).thenReturn(Optional.of(settings));
         DbaasDbClassifier classifier = getTenantClassifier("test-tenant");
+
+        when(tenantDbConfiguration.getPostgresDbConfiguration(any())).thenCallRealMethod();
 
         PostgresDatabase postgresDatabaseWithExtensions = getPostgresDatabase("test-url", "test-username", "test-password");
         when(dbaaSClient.getOrCreateDatabase(any(), anyString(), anyMap(), any(DatabaseConfig.class))).thenReturn(postgresDatabaseWithExtensions);
