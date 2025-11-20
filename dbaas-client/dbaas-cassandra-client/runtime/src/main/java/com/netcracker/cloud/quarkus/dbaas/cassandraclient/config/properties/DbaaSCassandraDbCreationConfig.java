@@ -39,13 +39,7 @@ public interface DbaaSCassandraDbCreationConfig {
             Map<String, CassandraDbConfiguration> tenants = tenantDbConfiguration();
             if (tenants != null) {
                 CassandraDbConfiguration cassandraDbConfiguration = tenants.get(tenantId);
-                if (cassandraDbConfiguration != null) {
-                    return cassandraDbConfiguration;
-                }
-                CassandraDbConfiguration allTenants = tenants.get("tenant");
-                if (allTenants != null) {
-                    return allTenants;
-                }
+                return cassandraDbConfiguration != null ? cassandraDbConfiguration : tenants.get("tenant");
             }
         }
         return serviceDbConfiguration();
