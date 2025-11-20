@@ -34,12 +34,9 @@ import java.util.TreeMap;
 import java.util.stream.Stream;
 
 import static org.mockito.ArgumentMatchers.*;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class DatabasePoolTestUtilsTest {
-    private static final String TEST_MS_NAME = "test-ms";
     private static final String TEST_NAMESPACE = "test-namespace";
 
     @Test
@@ -53,6 +50,7 @@ public class DatabasePoolTestUtilsTest {
         DbaasApiPropertiesConfig apiConfig = mock(DbaasApiPropertiesConfig.class);
         when(apiConfig.runtimeUserRole()).thenReturn(Optional.of("admin"));
         when(apiConfig.dbPrefix()).thenReturn(Optional.empty());
+        when(apiConfig.getDbaaseApiProperties()).thenCallRealMethod();
         DbaaSPostgresDbCreationConfig config = mock(DbaaSPostgresDbCreationConfig.class);
         when(config.dbaasApiPropertiesConfig()).thenReturn(apiConfig);
 
@@ -70,9 +68,10 @@ public class DatabasePoolTestUtilsTest {
         CoreFlywayConfig coreFlywayConfig = mock(CoreFlywayConfig.class);
         FlywayConfig flywayConfig = mock(FlywayConfig.class);
         when(flywayConfig.cleanAndMigrateAtStart()).thenReturn(Boolean.FALSE);
+        when(coreFlywayConfig.globalFlywayConfig()).thenReturn(flywayConfig);
 
         AgroalConnectionPoolConfigurationFactory poolConfigFactory = mock(AgroalConnectionPoolConfigurationFactory.class);
-        when(poolConfigFactory.createAgroalConnectionPoolConfiguration(logicalDbname, new HashMap<String,Object>())).thenReturn(agroalPoolConfiguration);
+        when(poolConfigFactory.createAgroalConnectionPoolConfiguration(logicalDbname, new HashMap())).thenReturn(agroalPoolConfiguration);
         DbaaSPostgresDbCreationServiceImpl creationService = new DbaaSPostgresDbCreationServiceImpl(
                 TEST_NAMESPACE,
                 mock(MigrationService.class),
