@@ -85,7 +85,7 @@ public class DbaaSCassandraDbCreationConfigTest {
         Optional<String> physicalDatabaseIdOptional = serviceDbConfiguration.physicalDatabaseId();
         Assertions.assertNotNull(physicalDatabaseIdOptional);
         Assertions.assertEquals(PHYSICAL_DATABASE_ID, physicalDatabaseIdOptional.orElseThrow());
-        Assertions.assertEquals(REPLICATION_VALUE, serviceDbConfiguration.databaseSettings().replication.get());
+        Assertions.assertEquals(REPLICATION_VALUE, serviceDbConfiguration.databaseSettings().replication().get());
 
         var customProvider = (ExactDbPrefixAndRoleTestProfile.CustomConfigCassandraLogicalDbProvider) dbProvider;
 
