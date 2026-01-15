@@ -10,6 +10,7 @@ import com.netcracker.cloud.dbaas.client.management.DatabaseConfig;
 import com.netcracker.cloud.dbaas.client.management.DbaasDbClassifier;
 import com.netcracker.cloud.dbaas.common.config.DbaasApiPropertiesConfig;
 import com.netcracker.cloud.quarkus.dbaas.mongoclient.config.properties.DbaasMongoDbCreationConfig;
+import com.netcracker.cloud.quarkus.dbaas.mongoclient.config.properties.MongoDbConfiguration;
 import com.netcracker.cloud.quarkus.dbaas.mongoclient.entity.connection.MongoDBConnection;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -43,6 +44,7 @@ public class ContainerMongoClientSchemasTest extends ContainerMongoDbBaseConfig 
         DbaasApiProperties dbaasApiProperties = new DbaasApiProperties();
         when(dbaasApiPropertiesConfig.getDbaaseApiProperties()).thenReturn(dbaasApiProperties);
         when(dbaasMongoDbCreationConfig.dbaasApiPropertiesConfig()).thenReturn(dbaasApiPropertiesConfig);
+        when(dbaasMongoDbCreationConfig.getMongoDbConfiguration(any())).thenReturn(new MongoDbConfiguration());
 
         mongoClientCreationImpl = new MongoClientCreationImpl(dbaasMongoDbCreationConfig);
         MongoDBConnection mongoDBConnection = new MongoDBConnection();
