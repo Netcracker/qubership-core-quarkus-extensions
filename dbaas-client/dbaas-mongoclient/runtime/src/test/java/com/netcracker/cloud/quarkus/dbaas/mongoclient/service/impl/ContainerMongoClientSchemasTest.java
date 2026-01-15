@@ -17,6 +17,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 import java.util.UUID;
 
 import static com.netcracker.cloud.dbaas.client.DbaasConst.SCOPE;
@@ -44,7 +45,7 @@ public class ContainerMongoClientSchemasTest extends ContainerMongoDbBaseConfig 
         DbaasApiProperties dbaasApiProperties = new DbaasApiProperties();
         when(dbaasApiPropertiesConfig.getDbaaseApiProperties()).thenReturn(dbaasApiProperties);
         when(dbaasMongoDbCreationConfig.dbaasApiPropertiesConfig()).thenReturn(dbaasApiPropertiesConfig);
-        when(dbaasMongoDbCreationConfig.getMongoDbConfiguration(any())).thenReturn(new MongoDbConfiguration());
+        when(dbaasMongoDbCreationConfig.getMongoDbConfiguration(any())).thenReturn(new MongoDbConfiguration(Optional.empty()));
 
         mongoClientCreationImpl = new MongoClientCreationImpl(dbaasMongoDbCreationConfig);
         MongoDBConnection mongoDBConnection = new MongoDBConnection();
